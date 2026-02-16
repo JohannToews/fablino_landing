@@ -8,6 +8,7 @@ import AppPreviewSection from "@/components/AppPreviewSection";
 import PricingSection from "@/components/PricingSection";
 import TrustSection from "@/components/TrustSection";
 import FooterSection from "@/components/FooterSection";
+import MobileStickyCtaBar from "@/components/MobileStickyCtaBar";
 import { useScrollAnimation, useSectionTracking } from "@/hooks/useScrollAnimation";
 
 const Index = () => {
@@ -26,6 +27,7 @@ const Index = () => {
       <PricingSection />
       <TrustSection />
       <FooterSection />
+      <MobileStickyCtaBar />
     </div>
   );
 };

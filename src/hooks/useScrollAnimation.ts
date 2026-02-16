@@ -48,5 +48,5 @@ export function trackCTA(location: string) {
 }
 
 export function getCTALink(section: string) {
-  return `https://app.fablino.eu/welcome?utm_source=landing&utm_medium=web&utm_campaign=${section}_cta`;
+  return `https://app.fablino.eu/welcome?utm_source=landing&utm_campaign=${section}`;
 }
