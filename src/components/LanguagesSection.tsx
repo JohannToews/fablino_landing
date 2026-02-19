@@ -13,10 +13,8 @@ const LanguagesSection = () => {
         <h2 className="text-primary-foreground mb-4">
           {t("lang_headline")}
         </h2>
-        <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-10 text-lg">
+        <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-10 text-lg leading-relaxed">
           {t("lang_subline")}
-          <br />
-          <span className="font-bold text-primary-foreground">{t("lang_highlight")}</span>
         </p>
 
         <div className="flex flex-wrap justify-center gap-3 mb-10">
@@ -37,7 +35,7 @@ const LanguagesSection = () => {
         <a
           href={getCTALink("languages")}
           onClick={() => trackCTA("languages")}
-          className="inline-block bg-primary-foreground text-secondary font-bold px-8 py-3.5 rounded-full hover:scale-[1.03] transition-all shadow-fablino-lg"
+          className="inline-block bg-primary text-primary-foreground font-bold px-8 py-3.5 rounded-full hover:scale-[1.03] hover:shadow-lg transition-all shadow-fablino-lg"
         >
           {t("lang_cta")}
         </a>
