@@ -1,5 +1,6 @@
-import { trackCTA, getCTALink } from "@/hooks/useScrollAnimation";
+import { trackCTA } from "@/hooks/useScrollAnimation";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { useBetaModal } from "@/context/BetaModalContext";
 
 type PricingTier = {
   nameKey: string;
@@ -66,6 +67,7 @@ const tiers: PricingTier[] = [
 
 const PricingSection = () => {
   const { t } = useLanguage();
+  const { open } = useBetaModal();
 
   return (
     <section id="pricing" data-section="pricing" className="section-padding bg-background">
@@ -115,17 +117,16 @@ const PricingSection = () => {
               </ul>
 
               {/* CTA */}
-              <a
-                href={getCTALink("pricing")}
-                onClick={() => trackCTA("pricing")}
-                className={`block text-center font-bold text-base py-3 rounded-full transition-all ${
+              <button
+                onClick={() => { trackCTA("pricing"); open("pricing"); }}
+                className={`block w-full text-center font-bold text-base py-3 rounded-full transition-all ${
                   tier.ctaStyle === "filled"
                     ? "bg-primary text-primary-foreground shadow-fablino-orange hover:shadow-fablino-orange-hover hover:scale-[1.03]"
                     : "bg-card text-primary border-2 border-primary hover:bg-fablino-orange-bg hover:scale-[1.02]"
                 }`}
               >
                 {t(tier.ctaKey)}
-              </a>
+              </button>
             </div>
           ))}
         </div>

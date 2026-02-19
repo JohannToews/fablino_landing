@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
-import { trackCTA, getCTALink } from "@/hooks/useScrollAnimation";
+import { trackCTA } from "@/hooks/useScrollAnimation";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { useBetaModal } from "@/context/BetaModalContext";
 import type { Language } from "@/i18n/translations";
 
 const flags: { lang: Language; flag: string }[] = [
@@ -14,6 +15,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const { lang, setLang, t } = useLanguage();
+  const { open } = useBetaModal();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -60,13 +62,12 @@ const Navbar = () => {
             ))}
           </div>
 
-          <a
-            href={getCTALink("nav")}
-            onClick={() => trackCTA("nav")}
+          <button
+            onClick={() => { trackCTA("nav"); open("nav"); }}
             className="bg-primary text-primary-foreground font-bold text-sm px-6 py-2.5 rounded-full shadow-fablino-orange hover:shadow-fablino-orange-hover hover:scale-[1.03] transition-all"
           >
             {t("nav_cta")}
-          </a>
+          </button>
         </div>
 
         {/* Mobile hamburger */}
@@ -97,13 +98,12 @@ const Navbar = () => {
           <button onClick={() => scrollTo("how-it-works")} className="block w-full text-left font-semibold text-fablino-dark py-2">{t("nav_how")}</button>
           <button onClick={() => scrollTo("features")} className="block w-full text-left font-semibold text-fablino-dark py-2">{t("nav_features")}</button>
           <button onClick={() => scrollTo("pricing")} className="block w-full text-left font-semibold text-fablino-dark py-2">{t("nav_pricing")}</button>
-          <a
-            href={getCTALink("nav")}
-            onClick={() => trackCTA("nav")}
-            className="block text-center bg-primary text-primary-foreground font-bold px-6 py-3 rounded-full shadow-fablino-orange"
+          <button
+            onClick={() => { trackCTA("nav"); open("nav"); setMenuOpen(false); }}
+            className="block w-full text-center bg-primary text-primary-foreground font-bold px-6 py-3 rounded-full shadow-fablino-orange"
           >
             {t("nav_cta")}
-          </a>
+          </button>
         </div>
       )}
     </nav>

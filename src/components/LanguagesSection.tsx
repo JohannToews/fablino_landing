@@ -1,10 +1,12 @@
-import { trackCTA, getCTALink } from "@/hooks/useScrollAnimation";
+import { trackCTA } from "@/hooks/useScrollAnimation";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { useBetaModal } from "@/context/BetaModalContext";
 
 const flags = ["🇩🇪", "🇫🇷", "🇬🇧", "🇪🇸", "🇳🇱", "🇮🇹", "🇵🇱", "🇹🇷", "🇭🇺", "🇧🇬", "🇱🇹", "🇵🇹", "🇧🇦"];
 
 const LanguagesSection = () => {
   const { t } = useLanguage();
+  const { open } = useBetaModal();
 
   return (
     <section data-section="languages" className="section-padding bg-fablino-teal-dark text-primary-foreground relative overflow-hidden">
@@ -32,13 +34,12 @@ const LanguagesSection = () => {
           </span>
         </div>
 
-        <a
-          href={getCTALink("languages")}
-          onClick={() => trackCTA("languages")}
+        <button
+          onClick={() => { trackCTA("languages"); open("languages"); }}
           className="inline-block bg-primary text-primary-foreground font-bold px-8 py-3.5 rounded-full hover:scale-[1.03] hover:shadow-lg transition-all shadow-fablino-lg"
         >
           {t("lang_cta")}
-        </a>
+        </button>
       </div>
     </section>
   );

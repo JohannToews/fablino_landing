@@ -1,5 +1,6 @@
-import { trackCTA, getCTALink } from "@/hooks/useScrollAnimation";
+import { trackCTA } from "@/hooks/useScrollAnimation";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { useBetaModal } from "@/context/BetaModalContext";
 import storyCover from "@/assets/story-cover-mummies.jpg";
 import fablinoMascot from "@/assets/fablino-mascot-thumbsup.png";
 
@@ -17,6 +18,7 @@ function renderHighlight(text: string) {
 
 const HeroSection = () => {
   const { t } = useLanguage();
+  const { open } = useBetaModal();
 
   return (
     <section data-section="hero" className="relative pt-24 pb-12 sm:pt-28 sm:pb-16 md:pt-32 md:pb-20 overflow-hidden bg-background">
@@ -34,14 +36,13 @@ const HeroSection = () => {
             {t("hero_subline")}
           </p>
           <div className="animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-            <a
+            <button
               id="hero-cta"
-              href={getCTALink("hero")}
-              onClick={() => trackCTA("hero")}
+              onClick={() => { trackCTA("hero"); open("hero"); }}
               className="inline-block bg-primary text-primary-foreground font-bold text-lg px-10 py-4 rounded-full shadow-fablino-orange hover:shadow-fablino-orange-hover hover:scale-[1.03] transition-all"
             >
               {t("hero_cta")}
-            </a>
+            </button>
             <p className="mt-3 text-sm text-muted-foreground">
               {t("hero_subtext")}
             </p>

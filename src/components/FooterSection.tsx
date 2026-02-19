@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
 import FablinoMascot from "./FablinoMascot";
-import { trackCTA, getCTALink } from "@/hooks/useScrollAnimation";
+import { trackCTA } from "@/hooks/useScrollAnimation";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { useBetaModal } from "@/context/BetaModalContext";
 
 const FooterSection = () => {
   const { t } = useLanguage();
+  const { open } = useBetaModal();
 
   return (
     <footer data-section="footer" className="bg-fablino-dark text-primary-foreground">
@@ -15,13 +17,12 @@ const FooterSection = () => {
           <p className="text-primary-foreground/70 max-w-lg mx-auto mb-8">
             {t("footer_cta_subline")}
           </p>
-          <a
-            href={getCTALink("footer")}
-            onClick={() => trackCTA("footer")}
+          <button
+            onClick={() => { trackCTA("footer"); open("footer"); }}
             className="inline-block bg-primary text-primary-foreground font-bold text-lg px-10 py-4 rounded-full shadow-fablino-orange hover:shadow-fablino-orange-hover hover:scale-[1.03] transition-all"
           >
             {t("footer_cta_button")}
-          </a>
+          </button>
         </div>
       </div>
 
