@@ -76,11 +76,11 @@ const PricingSection = () => {
         </p>
 
         {/* 3-column grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto items-start">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto items-stretch">
           {tiers.map((tier, idx) => (
             <div
               key={idx}
-              className={`fade-in-section relative bg-card rounded-3xl p-7 flex flex-col ${
+              className={`fade-in-section relative bg-card rounded-3xl p-7 flex flex-col h-full ${
                 tier.highlight
                   ? "border-2 border-primary shadow-fablino-orange"
                   : "border border-border shadow-fablino-lg"
