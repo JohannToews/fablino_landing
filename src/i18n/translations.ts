@@ -350,93 +350,156 @@ export const translations: Record<string, Record<Language, string>> = {
   // ===== PRICING =====
   pricing_headline: {
     de: "Einfach und transparent",
-    en: "Simple and transparent",
+    en: "Simple and transparent pricing",
     fr: "Simple et transparent",
     es: "Simple y transparente",
   },
-  pricing_beta_badge: {
-    de: "Beta-Tester? Jetzt komplett kostenlos!",
-    en: "Beta tester? Completely free right now!",
-    fr: "Bêta-testeur ? Totalement gratuit maintenant !",
-    es: "¿Beta tester? ¡Completamente gratis ahora!",
+  pricing_subline: {
+    de: "14 Tage kostenlos testen · Jederzeit kündbar",
+    en: "Try free for 14 days · Cancel anytime",
+    fr: "14 jours gratuits · Résiliable à tout moment",
+    es: "14 días gratis · Cancela cuando quieras",
   },
-  pricing_beta_sub: {
-    de: "Teste 14 Tage alle Features. Keine Kreditkarte nötig.",
-    en: "Try all features for 14 days. No credit card required.",
-    fr: "Essayez toutes les fonctionnalités pendant 14 jours. Sans carte bancaire.",
-    es: "Prueba todas las funciones durante 14 días. Sin tarjeta de crédito.",
+  pricing_most_popular: {
+    de: "Beliebteste Wahl",
+    en: "Most popular",
+    fr: "Le plus populaire",
+    es: "Más popular",
   },
-  pricing_plan_name: {
-    de: "Fablino",
-    en: "Fablino",
-    fr: "Fablino",
-    es: "Fablino",
-  },
-  pricing_monthly: {
-    de: "4,99€",
-    en: "€4.99",
-    fr: "4,99€",
-    es: "4,99€",
-  },
-  pricing_monthly_label: {
+  pricing_period: {
     de: "/ Monat",
     en: "/ month",
     fr: "/ mois",
     es: "/ mes",
   },
-  pricing_yearly: {
-    de: "oder 39,99€ / Jahr (spar 33%)",
-    en: "or €39.99 / year (save 33%)",
-    fr: "ou 39,99€ / an (économisez 33%)",
-    es: "o 39,99€ / año (ahorra 33%)",
+  pricing_cta_getstarted: {
+    de: "Jetzt starten →",
+    en: "Get started →",
+    fr: "Commencer →",
+    es: "Empezar →",
   },
-  pricing_feature_1: {
-    de: "Unbegrenzte Geschichten",
-    en: "Unlimited stories",
-    fr: "Histoires illimitées",
-    es: "Historias ilimitadas",
+
+  // Starter
+  pricing_starter_name: {
+    de: "Starter",
+    en: "Starter",
+    fr: "Starter",
+    es: "Starter",
   },
-  pricing_feature_2: {
-    de: "14+ Sprachen",
-    en: "14+ Languages",
-    fr: "14+ Langues",
-    es: "14+ Idiomas",
+  pricing_starter_price: {
+    de: "2,99€",
+    en: "€2.99",
+    fr: "2,99€",
+    es: "2,99€",
   },
-  pricing_feature_3: {
-    de: "Quizzes & Gamification",
-    en: "Quizzes & Gamification",
-    fr: "Quiz & Gamification",
-    es: "Quizzes y Gamificación",
+  pricing_starter_f1: {
+    de: "10 Geschichten / Monat",
+    en: "10 stories per month",
+    fr: "10 histoires / mois",
+    es: "10 historias / mes",
   },
-  pricing_feature_4: {
-    de: "Personalisierte Bilder",
-    en: "Personalized images",
-    fr: "Images personnalisées",
-    es: "Imágenes personalizadas",
+  pricing_starter_f2: {
+    de: "1 Kinderprofil",
+    en: "1 child profile",
+    fr: "1 profil enfant",
+    es: "1 perfil infantil",
   },
-  pricing_feature_5: {
-    de: "Lernthemen wählbar",
-    en: "Choose learning themes",
-    fr: "Thèmes d'apprentissage au choix",
-    es: "Elige temas de aprendizaje",
+  pricing_starter_f3: {
+    de: "3 Bilder pro Geschichte",
+    en: "3 images per story",
+    fr: "3 images par histoire",
+    es: "3 imágenes por historia",
   },
-  pricing_feature_6: {
-    de: "Bis zu 3 Kinderprofile",
-    en: "Up to 3 child profiles",
-    fr: "Jusqu'à 3 profils enfants",
-    es: "Hasta 3 perfiles infantiles",
+
+  // Standard
+  pricing_standard_name: {
+    de: "Standard",
+    en: "Standard",
+    fr: "Standard",
+    es: "Standard",
   },
-  pricing_cta: {
-    de: "Kostenlos ausprobieren",
-    en: "Try for free",
-    fr: "Essayer gratuitement",
-    es: "Prueba gratis",
+  pricing_standard_price: {
+    de: "4,99€",
+    en: "€4.99",
+    fr: "4,99€",
+    es: "4,99€",
   },
-  pricing_beta_offer: {
-    de: "🎉 Beta-Angebot: Erste 3 Monate nur 2,99€/Monat",
-    en: "🎉 Beta offer: First 3 months only €2.99/month",
-    fr: "🎉 Offre bêta : Les 3 premiers mois à seulement 2,99€/mois",
-    es: "🎉 Oferta beta: Los primeros 3 meses solo 2,99€/mes",
+  pricing_standard_f1: {
+    de: "45 Geschichten / Monat",
+    en: "45 stories per month",
+    fr: "45 histoires / mois",
+    es: "45 historias / mes",
+  },
+  pricing_standard_f2: {
+    de: "2 Kinderprofile",
+    en: "2 child profiles",
+    fr: "2 profils enfants",
+    es: "2 perfiles infantiles",
+  },
+
+  // Premium
+  pricing_premium_name: {
+    de: "Premium",
+    en: "Premium",
+    fr: "Premium",
+    es: "Premium",
+  },
+  pricing_premium_price: {
+    de: "6,99€",
+    en: "€6.99",
+    fr: "6,99€",
+    es: "6,99€",
+  },
+  pricing_premium_f2: {
+    de: "3 Kinderprofile",
+    en: "3 child profiles",
+    fr: "3 profils enfants",
+    es: "3 perfiles infantiles",
+  },
+  pricing_premium_f3: {
+    de: "4 Bilder pro Geschichte",
+    en: "4 images per story",
+    fr: "4 images par histoire",
+    es: "4 imágenes por historia",
+  },
+  pricing_premium_f8: {
+    de: "Prioritäts-Generierung",
+    en: "Priority story generation",
+    fr: "Génération prioritaire",
+    es: "Generación prioritaria",
+  },
+
+  // Shared features
+  pricing_shared_f4: {
+    de: "Alle Sprachen inklusive",
+    en: "All languages included",
+    fr: "Toutes les langues incluses",
+    es: "Todos los idiomas incluidos",
+  },
+  pricing_shared_f5: {
+    de: "Quizzes & Vokabular",
+    en: "Quizzes & vocabulary",
+    fr: "Quiz & vocabulaire",
+    es: "Quizzes y vocabulario",
+  },
+  pricing_shared_f6: {
+    de: "Kapitelgeschichten",
+    en: "Chapter stories",
+    fr: "Histoires à chapitres",
+    es: "Historias por capítulos",
+  },
+  pricing_shared_f7: {
+    de: "Lernthemen",
+    en: "Learning themes",
+    fr: "Thèmes d'apprentissage",
+    es: "Temas de aprendizaje",
+  },
+
+  pricing_credits_note: {
+    de: "Brauchst du mehr? Kaufe jederzeit zusätzliche Story-Credits.",
+    en: "Need more? Buy extra story credits anytime.",
+    fr: "Besoin de plus ? Achetez des crédits supplémentaires à tout moment.",
+    es: "¿Necesitas más? Compra créditos adicionales cuando quieras.",
   },
   pricing_footer: {
     de: "Jederzeit kündbar. Keine versteckten Kosten.",
