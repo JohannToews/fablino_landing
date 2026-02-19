@@ -1,7 +1,7 @@
-import FablinoMascot from "./FablinoMascot";
 import { trackCTA, getCTALink } from "@/hooks/useScrollAnimation";
 import { useLanguage } from "@/i18n/LanguageContext";
 import storyCover from "@/assets/story-cover-mummies.jpg";
+import fablinoMascot from "@/assets/fablino-mascot-thumbsup.png";
 
 function renderHighlight(text: string) {
   const parts = text.split(/<highlight>(.*?)<\/highlight>/);
@@ -48,60 +48,62 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Tablet mockup */}
-        <div className="flex justify-center relative animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-          <div className="relative">
-            {/* Tablet frame */}
-            <div className="w-[300px] sm:w-[330px] bg-card rounded-[1.75rem] border-[5px] border-fablino-light-gray shadow-fablino-xl overflow-hidden flex flex-col">
-              {/* Tablet top bar with camera */}
-              <div className="flex justify-center items-center py-2 bg-card border-b border-fablino-light-gray/50">
-                <div className="w-2 h-2 rounded-full bg-fablino-light-gray" />
-              </div>
+        {/* Tablet mockup + Mascot */}
+        <div className="flex justify-center items-end gap-4 relative animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+          {/* Tablet frame */}
+          <div className="w-[300px] sm:w-[330px] bg-card rounded-[1.75rem] border-[5px] border-fablino-light-gray shadow-fablino-xl overflow-hidden flex flex-col">
+            {/* Tablet top bar with camera */}
+            <div className="flex justify-center items-center py-2 bg-card border-b border-fablino-light-gray/50">
+              <div className="w-2 h-2 rounded-full bg-fablino-light-gray" />
+            </div>
 
-              {/* Cover image */}
-              <div className="w-full aspect-[16/9] overflow-hidden">
-                <img
-                  src={storyCover}
-                  alt="Story cover"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            {/* Cover image */}
+            <div className="w-full aspect-[16/9] overflow-hidden">
+              <img
+                src={storyCover}
+                alt="Story cover"
+                className="w-full h-full object-cover"
+              />
+            </div>
 
-              {/* Story content */}
-              <div className="px-4 pt-3 pb-4 flex flex-col gap-2">
-                {/* App label */}
-                <span className="text-[9px] font-bold text-secondary uppercase tracking-widest">
-                  {t("hero_mockup_label")}
-                </span>
+            {/* Story content */}
+            <div className="px-4 pt-3 pb-4 flex flex-col gap-2">
+              {/* App label */}
+              <span className="text-[9px] font-bold text-secondary uppercase tracking-widest">
+                {t("hero_mockup_label")}
+              </span>
 
-                {/* Title */}
-                <h3 className="text-sm font-extrabold leading-snug text-foreground">
-                  {t("hero_mockup_title")}
-                </h3>
+              {/* Title */}
+              <h3 className="text-sm font-extrabold leading-snug text-foreground">
+                {t("hero_mockup_title")}
+              </h3>
 
-                {/* Story text excerpt */}
-                <p className="text-xs leading-relaxed text-muted-foreground line-clamp-4">
-                  {t("hero_mockup_text")}
-                </p>
+              {/* Story text excerpt */}
+              <p className="text-xs leading-relaxed text-muted-foreground line-clamp-4">
+                {t("hero_mockup_text")}
+              </p>
 
-                {/* Stars */}
-                <div className="flex gap-0.5 mt-1">
-                  {[1, 2, 3, 4, 5].map(i => (
-                    <span key={i} className="text-fablino-star text-sm">★</span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Tablet bottom bar */}
-              <div className="flex justify-center items-center py-2 border-t border-fablino-light-gray/50">
-                <div className="w-10 h-1 rounded-full bg-fablino-light-gray" />
+              {/* Stars */}
+              <div className="flex gap-0.5 mt-1">
+                {[1, 2, 3, 4, 5].map(i => (
+                  <span key={i} className="text-fablino-star text-sm">★</span>
+                ))}
               </div>
             </div>
 
-            {/* Mascot */}
-            <div className="absolute -bottom-6 -right-6 animate-float">
-              <FablinoMascot size={110} />
+            {/* Tablet bottom bar */}
+            <div className="flex justify-center items-center py-2 border-t border-fablino-light-gray/50">
+              <div className="w-10 h-1 rounded-full bg-fablino-light-gray" />
             </div>
+          </div>
+
+          {/* Mascot beside tablet */}
+          <div className="animate-float flex-shrink-0">
+            <img
+              src={fablinoMascot}
+              alt="Fablino Maskottchen"
+              className="w-24 sm:w-28 drop-shadow-lg"
+            />
           </div>
         </div>
       </div>
