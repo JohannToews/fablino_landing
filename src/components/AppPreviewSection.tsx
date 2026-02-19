@@ -13,7 +13,7 @@ const AppPreviewSection = () => {
         </p>
 
         <div className="fade-in-section inline-block">
-          <div className="max-w-[700px] mx-auto bg-card rounded-[1.75rem] border-[10px] border-foreground/15 shadow-[0_24px_64px_-8px_rgba(0,0,0,0.28),0_0_0_1px_rgba(0,0,0,0.08)] overflow-hidden flex flex-col">
+          <div className="max-w-[700px] mx-auto bg-card rounded-[1.75rem] border-[10px] border-black shadow-[0_24px_64px_-8px_rgba(0,0,0,0.28),0_0_0_1px_rgba(0,0,0,0.08)] overflow-hidden flex flex-col">
             {/* Tablet top bar with camera */}
             <div className="flex justify-center items-center py-2 bg-card border-b border-border/50">
               <div className="w-2 h-2 rounded-full bg-muted" />
