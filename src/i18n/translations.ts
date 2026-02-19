@@ -431,10 +431,10 @@ export const translations: Record<string, Record<Language, string>> = {
     es: "4,99€",
   },
   pricing_standard_f1: {
-    de: "45 Geschichten / Monat",
-    en: "45 stories per month",
-    fr: "45 histoires / mois",
-    es: "45 historias / mes",
+    de: "30 Geschichten / Monat",
+    en: "30 stories per month",
+    fr: "30 histoires / mois",
+    es: "30 historias / mes",
   },
   pricing_standard_f2: {
     de: "2 Kinderprofile",
@@ -449,6 +449,12 @@ export const translations: Record<string, Record<Language, string>> = {
     en: "Premium",
     fr: "Premium",
     es: "Premium",
+  },
+  pricing_premium_f1: {
+    de: "45 Geschichten / Monat",
+    en: "45 stories per month",
+    fr: "45 histoires / mois",
+    es: "45 historias / mes",
   },
   pricing_premium_price: {
     de: "6,99€",
@@ -468,13 +474,6 @@ export const translations: Record<string, Record<Language, string>> = {
     fr: "4 images par histoire",
     es: "4 imágenes por historia",
   },
-  pricing_premium_f8: {
-    de: "Prioritäts-Generierung",
-    en: "Priority story generation",
-    fr: "Génération prioritaire",
-    es: "Generación prioritaria",
-  },
-
   // Shared features
   pricing_shared_f4: {
     de: "Alle Sprachen inklusive",
@@ -489,12 +488,18 @@ export const translations: Record<string, Record<Language, string>> = {
     es: "Quizzes y vocabulario",
   },
   pricing_shared_f6: {
-    de: "Kapitelgeschichten",
-    en: "Chapter stories",
-    fr: "Histoires à chapitres",
-    es: "Historias por capítulos",
+    de: "Kapitelgeschichten erstellen",
+    en: "Create chapter stories",
+    fr: "Créer des histoires à chapitres",
+    es: "Crear historias por capítulos",
   },
   pricing_shared_f7: {
+    de: "Kapitelgeschichten mitgestalten",
+    en: "Co-create chapter stories",
+    fr: "Co-créer des histoires à chapitres",
+    es: "Co-crear historias por capítulos",
+  },
+  pricing_shared_f8: {
     de: "Lernthemen",
     en: "Learning themes",
     fr: "Thèmes d'apprentissage",
