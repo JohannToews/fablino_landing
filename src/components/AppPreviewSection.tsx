@@ -1,4 +1,5 @@
 import { useLanguage } from "@/i18n/LanguageContext";
+import syllablePreview from "@/assets/syllable-preview.png";
 
 const AppPreviewSection = () => {
   const { t } = useLanguage();
@@ -13,13 +14,11 @@ const AppPreviewSection = () => {
 
         <div className="fade-in-section inline-block">
           <div className="max-w-[800px] mx-auto bg-fablino-dark rounded-3xl p-3 sm:p-4 shadow-fablino-xl">
-            <div className="bg-accent rounded-2xl aspect-[16/10] flex items-center justify-center">
-              <div className="text-center p-10">
-                <div className="text-5xl mb-4">📖✨</div>
-                <h3 className="mb-2">{t("preview_placeholder")}</h3>
-                <p className="text-sm text-muted-foreground">{t("preview_placeholder_sub")}</p>
-              </div>
-            </div>
+            <img
+              src={syllablePreview}
+              alt="Fablino Silbenfärbung — farbige Silben im Lesetext"
+              className="rounded-2xl w-full object-cover"
+            />
           </div>
         </div>
       </div>
