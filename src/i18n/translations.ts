@@ -323,16 +323,16 @@ export const translations: Record<string, Record<Language, string>> = {
 
   // ===== APP PREVIEW =====
   preview_headline: {
-    de: "Ein Leseerlebnis wie ein echtes Kinderbuch",
-    en: "A reading experience like a real children's book",
-    fr: "Une expérience de lecture comme un vrai livre pour enfants",
-    es: "Una experiencia de lectura como un libro infantil de verdad",
+    de: "Lesen lernen, Silbe für Silbe",
+    en: "Learning to read, syllable by syllable",
+    fr: "Apprendre à lire, syllabe par syllabe",
+    es: "Aprender a leer, sílaba a sílaba",
   },
   preview_subline: {
-    de: "Personalisierte Illustrationen, Seite für Seite — direkt auf dem Tablet oder Handy.",
-    en: "Personalized illustrations, page by page — right on your tablet or phone.",
-    fr: "Des illustrations personnalisées, page après page — directement sur votre tablette ou téléphone.",
-    es: "Ilustraciones personalizadas, página a página — directamente en tu tablet o móvil.",
+    de: "Fablino trennt jeden Text in farbige Silben — so erkennen Leseanfänger die Wortbausteine auf einen Blick. Kein Schulbuch-Gefühl, sondern spannende Geschichten mit eingebauter Lesehilfe. Verfügbar für Deutsch und Französisch.",
+    en: "Fablino splits every text into coloured syllables — so beginner readers spot word building blocks at a glance. No textbook feel, just exciting stories with built-in reading support. Available for German and French.",
+    fr: "Fablino découpe chaque texte en syllabes colorées — pour que les lecteurs débutants repèrent les briques des mots d'un coup d'œil. Pas de manuel scolaire, mais des histoires passionnantes avec une aide à la lecture intégrée. Disponible en allemand et en français.",
+    es: "Fablino divide cada texto en sílabas de colores — para que los lectores principiantes reconozcan los bloques de palabras de un vistazo. Sin sensación de libro de texto, sino historias apasionantes con ayuda de lectura integrada. Disponible en alemán y francés.",
   },
   preview_placeholder: {
     de: "Screenshot kommt bald",
