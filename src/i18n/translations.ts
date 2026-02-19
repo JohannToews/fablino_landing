@@ -29,16 +29,16 @@ export const translations: Record<string, Record<Language, string>> = {
 
   // ===== HERO =====
   hero_headline: {
-    de: "Leseabenteuer, die dein Kind nicht mehr <highlight>loslassen</highlight>.",
-    en: "Reading adventures your child can't <highlight>put down</highlight>.",
-    fr: "Des aventures de lecture dont votre enfant ne peut plus <highlight>se passer</highlight>.",
-    es: "Aventuras de lectura que tu hijo no podrá <highlight>soltar</highlight>.",
+    de: "Geschichten, die dein Kind <highlight>lesen will</highlight>.",
+    en: "Stories your child <highlight>wants to read</highlight>.",
+    fr: "Des histoires que votre enfant <highlight>veut lire</highlight>.",
+    es: "Historias que tu hijo <highlight>quiere leer</highlight>.",
   },
   hero_subline: {
-    de: "Personalisierte Geschichten in denen dein Kind der Held ist, Kapitel mitgestaltet — und die genau so anspruchsvoll sind wie dein Kind es braucht.",
-    en: "Personalized stories where your child is the hero, shapes every chapter — and that are exactly as challenging as your child needs.",
-    fr: "Des histoires personnalisées où votre enfant est le héros, influence chaque chapitre — et qui sont exactement au niveau dont votre enfant a besoin.",
-    es: "Historias personalizadas donde tu hijo es el héroe, da forma a cada capítulo — y son exactamente tan desafiantes como tu hijo necesita.",
+    de: "Personalisierte Abenteuer, die zum Selberlesen begeistern — angepasst an Alter, Sprache und Leseniveau.",
+    en: "Personalized adventures that inspire independent reading — tailored to age, language and reading level.",
+    fr: "Des aventures personnalisées qui inspirent la lecture autonome — adaptées à l'âge, la langue et le niveau de lecture.",
+    es: "Aventuras personalizadas que inspiran la lectura autónoma — adaptadas a la edad, el idioma y el nivel lector.",
   },
   hero_cta: {
     de: "Jetzt kostenlos ausprobieren →",
