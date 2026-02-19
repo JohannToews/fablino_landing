@@ -59,16 +59,16 @@ export const translations: Record<string, Record<Language, string>> = {
     es: "FABLINO",
   },
   hero_mockup_title: {
-    de: "Emmas großes Abenteuer im Zauberwald",
-    en: "Emma's Great Adventure in the Magic Forest",
-    fr: "La grande aventure d'Emma dans la forêt magique",
-    es: "La gran aventura de Emma en el bosque mágico",
+    de: "Der Schatz der Mumien",
+    en: "The Treasure of the Mummies",
+    fr: "Le Trésor des Momies",
+    es: "El Tesoro de las Momias",
   },
   hero_mockup_text: {
-    de: "Emma lief durch den dichten Wald. Die Bäume waren so hoch, dass sie den Himmel kaum sehen konnte. Plötzlich hörte sie ein leises Flüstern…",
-    en: "Emma walked through the dense forest. The trees were so tall she could barely see the sky. Suddenly she heard a soft whisper…",
-    fr: "Emma marchait dans la forêt dense. Les arbres étaient si hauts qu'elle pouvait à peine voir le ciel. Soudain, elle entendit un murmure…",
-    es: "Emma caminaba por el denso bosque. Los árboles eran tan altos que apenas podía ver el cielo. De repente, escuchó un susurro…",
+    de: "Tom und Maria starrten auf die staubige Pergamentrolle in ihren Händen. Der Geruch von altem Papier und trockenem Wüstensand stieg ihre Nasen. Sie wussten, dass die Rolle sie direkt zum geheimen Grab führen würde, von dem Toms Opa immer erzählt hatte…",
+    en: "Tom and Maria stared at the dusty parchment scroll in their hands. The smell of old paper and dry desert sand filled their noses. They knew the scroll would lead them to the secret tomb Tom's grandfather had always talked about…",
+    fr: "Tom et Maria regardaient le parchemin poussiéreux dans leurs mains. L'odeur du vieux papier et du sable du désert leur montait aux narines. Ils savaient que le rouleau les mènerait au tombeau secret dont le grand-père de Tom avait toujours parlé…",
+    es: "Tom y María miraban fijamente el pergamino polvoriento en sus manos. El olor a papel viejo y arena seca del desierto les subía a la nariz. Sabían que el pergamino los llevaría directamente a la tumba secreta de la que el abuelo de Tom siempre había hablado…",
   },
 
   // ===== SOCIAL PROOF =====
