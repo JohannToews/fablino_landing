@@ -103,16 +103,16 @@ export const translations: Record<string, Record<Language, string>> = {
     es: "— Katarzyna, Mamá de Zofia (8)",
   },
   testimonial_3_quote: {
-    de: "Die Geschichten sind erstaunlich gut. Mein Kind erkennt sich selbst in der Hauptfigur und will immer weiterlesen.",
-    en: "The stories are amazingly good. My child recognizes themselves in the main character and always wants to keep reading.",
-    fr: "Les histoires sont incroyablement bonnes. Mon enfant se reconnaît dans le personnage principal et veut toujours lire la suite.",
-    es: "Las historias son increíblemente buenas. Mi hijo se reconoce en el personaje principal y siempre quiere seguir leyendo.",
+    de: "Meine Jungs lieben die Geschichten, in denen sie gemeinsam Abenteuer erleben — als Brüder.",
+    en: "My boys love the stories where they go on adventures together — as brothers.",
+    fr: "Mes garçons adorent les histoires où ils vivent des aventures ensemble — en frères.",
+    es: "Mis hijos adoran las historias en las que viven aventuras juntos — como hermanos.",
   },
   testimonial_3_author: {
-    de: "— Thomas, Papa von Lina (6)",
-    en: "— Thomas, Dad of Lina (6)",
-    fr: "— Thomas, Papa de Lina (6)",
-    es: "— Thomas, Papá de Lina (6)",
+    de: "— Diego, Papa von Julen (8) & Iker (6)",
+    en: "— Diego, Dad of Julen (8) & Iker (6)",
+    fr: "— Diego, Papa de Julen (8) & Iker (6)",
+    es: "— Diego, Papá de Julen (8) & Iker (6)",
   },
 
   // ===== HOW IT WORKS =====
