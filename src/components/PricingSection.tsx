@@ -34,7 +34,7 @@ const tiers: PricingTier[] = [
     features: [
       "pricing_standard_f1",
       "pricing_standard_f2",
-      "pricing_starter_f3",
+      "pricing_standard_f3",
       "pricing_shared_f4",
       "pricing_shared_f5",
       "pricing_shared_f6",
@@ -109,7 +109,7 @@ const PricingSection = () => {
                 {tier.features.map((fKey, fi) => (
                   <li key={fi} className="flex items-start gap-2 text-sm text-foreground">
                     <span className="text-fablino-success font-bold mt-0.5 shrink-0">✓</span>
-                    <span>{t(fKey)}</span>
+                    <span className={fi === 0 ? "font-bold" : ""}>{t(fKey)}</span>
                   </li>
                 ))}
               </ul>
