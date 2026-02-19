@@ -2,7 +2,9 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import syllablePreview from "@/assets/syllable-preview.png";
 
 const AppPreviewSection = () => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
+
+  if (lang !== "de") return null;
 
   return (
     <section data-section="app-preview" className="section-padding bg-fablino-light-gray">
