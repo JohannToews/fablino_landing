@@ -117,10 +117,10 @@ export const translations: Record<string, Record<Language, string>> = {
 
   // ===== HOW IT WORKS =====
   how_headline: {
-    de: "In 3 Schritten zur persönlichen Geschichte",
-    en: "Your personal story in 3 steps",
-    fr: "Votre histoire personnelle en 3 étapes",
-    es: "Tu historia personal en 3 pasos",
+    de: "In 3 Schritten zum Leseabenteuer",
+    en: "Your reading adventure in 3 steps",
+    fr: "Votre aventure de lecture en 3 étapes",
+    es: "Tu aventura lectora en 3 pasos",
   },
   how_step1_title: {
     de: "Name und Alter eingeben",
@@ -129,10 +129,10 @@ export const translations: Record<string, Record<Language, string>> = {
     es: "Ingresa nombre y edad",
   },
   how_step1_desc: {
-    de: "Sag uns wie dein Kind heißt und wie alt es ist. Das dauert 10 Sekunden.",
-    en: "Tell us your child's name and age. It takes 10 seconds.",
-    fr: "Dites-nous le prénom et l'âge de votre enfant. Ça prend 10 secondes.",
-    es: "Dinos el nombre y la edad de tu hijo. Toma 10 segundos.",
+    de: "Sag uns wie dein Kind heißt und wie alt es ist — dauert 10 Sekunden.",
+    en: "Tell us your child's name and age — takes just 10 seconds.",
+    fr: "Dites-nous le prénom et l'âge de votre enfant — ça prend 10 secondes.",
+    es: "Dinos el nombre y la edad de tu hijo — solo toma 10 segundos.",
   },
   how_step2_title: {
     de: "Thema wählen",
@@ -153,10 +153,10 @@ export const translations: Record<string, Record<Language, string>> = {
     es: "Leer la historia",
   },
   how_step3_desc: {
-    de: "In unter 60 Sekunden hält dein Kind seine eigene, personalisierte Geschichte in der Hand.",
-    en: "In under 60 seconds, your child has their own personalized story.",
-    fr: "En moins de 60 secondes, votre enfant a sa propre histoire personnalisée.",
-    es: "En menos de 60 segundos, tu hijo tiene su propia historia personalizada.",
+    de: "In unter 60 Sekunden hält dein Kind sein eigenes Leseabenteuer in der Hand.",
+    en: "In under 60 seconds, your child holds their own reading adventure.",
+    fr: "En moins de 60 secondes, votre enfant tient sa propre aventure de lecture.",
+    es: "En menos de 60 segundos, tu hijo tiene su propia aventura de lectura.",
   },
   how_cta: {
     de: "Jetzt erste Geschichte erstellen →",
