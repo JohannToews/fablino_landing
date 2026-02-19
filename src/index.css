@@ -101,7 +101,7 @@
   }
 
   .container-fablino {
-    @apply max-w-[1200px] mx-auto px-5;
+    @apply max-w-[1200px] mx-auto px-5 sm:px-8 md:px-14 lg:px-10;
   }
 
   /* Fade in on scroll */

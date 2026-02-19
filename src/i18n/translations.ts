@@ -739,4 +739,10 @@ export const translations: Record<string, Record<Language, string>> = {
     fr: "Accéder à la bêta →",
     es: "Entrar a la beta →",
   },
+  beta_code_invalid: {
+    de: "Ungültiger Beta-Code. Bitte überprüfe deinen Code.",
+    en: "Invalid beta code. Please check your code.",
+    fr: "Code bêta invalide. Veuillez vérifier votre code.",
+    es: "Código beta inválido. Por favor, verifica tu código.",
+  },
 };
