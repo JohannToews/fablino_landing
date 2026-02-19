@@ -303,10 +303,10 @@ export const translations: Record<string, Record<Language, string>> = {
     es: "Por fin suficientes historias en vuestro idioma",
   },
   lang_subline: {
-    de: "Für Katalanisch, Litauisch, Ungarisch oder Türkisch gibt es kaum übersetzte Kinderbücher. Fablino erstellt Geschichten direkt in eurer Familiensprache — so liest dein Kind auch zu Hause in der Sprache, die es am besten kennt.",
-    en: "For Catalan, Lithuanian, Hungarian or Turkish, there are hardly any translated children's books. Fablino creates stories directly in your family language — so your child reads at home in the language they know best.",
-    fr: "Pour le catalan, le lituanien, le hongrois ou le turc, les livres pour enfants traduits sont rares. Fablino crée des histoires directement dans la langue de votre famille — pour que votre enfant lise aussi chez lui dans la langue qu'il connaît le mieux.",
-    es: "Para el catalán, lituano, húngaro o turco, apenas existen libros infantiles traducidos. Fablino crea historias directamente en vuestro idioma familiar — para que tu hijo también lea en casa en la lengua que mejor conoce.",
+    de: "Die Schule übernimmt, die Familiensprache bleibt zurück. Fablino erstellt Geschichten in eurer Familiensprache — mit einstellbarem Schwierigkeitsgrad, damit dein Kind weiterhin in der Sprache liest, die ihr zu Hause sprecht.",
+    en: "School takes over, the family language falls behind. Fablino creates stories in your family language — with adjustable difficulty, so your child keeps reading in the language you speak at home.",
+    fr: "L'école prend le dessus, la langue familiale est reléguée au second plan. Fablino crée des histoires dans la langue de votre famille — avec une difficulté ajustable, pour que votre enfant continue à lire dans la langue que vous parlez à la maison.",
+    es: "La escuela lo absorbe todo y la lengua familiar queda relegada. Fablino crea historias en la lengua de tu familia — con dificultad ajustable, para que tu hijo siga leyendo en el idioma que habláis en casa.",
   },
   lang_highlight: {
     de: "",
