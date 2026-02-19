@@ -29,16 +29,16 @@ export const translations: Record<string, Record<Language, string>> = {
 
   // ===== HERO =====
   hero_headline: {
-    de: "Geschichten, in denen dein Kind der <highlight>Held</highlight> ist",
-    en: "Stories where your child is the <highlight>Hero</highlight>",
-    fr: "Des histoires où votre enfant est le <highlight>Héros</highlight>",
-    es: "Historias donde tu hijo es el <highlight>Héroe</highlight>",
+    de: "Leseabenteuer, die dein Kind nicht mehr <highlight>loslassen</highlight>.",
+    en: "Reading adventures your child can't <highlight>put down</highlight>.",
+    fr: "Des aventures de lecture dont votre enfant ne peut plus <highlight>se passer</highlight>.",
+    es: "Aventuras de lectura que tu hijo no podrá <highlight>soltar</highlight>.",
   },
   hero_subline: {
-    de: "Fablino erstellt personalisierte Leseabenteuer für Kinder von 5–13. Mit dem Namen deines Kindes, seinen Interessen und in seiner Sprache.",
-    en: "Fablino creates personalized reading adventures for kids aged 5–13. With your child's name, their interests and in their language.",
-    fr: "Fablino crée des aventures de lecture personnalisées pour les enfants de 5 à 13 ans. Avec le prénom de votre enfant, ses intérêts et dans sa langue.",
-    es: "Fablino crea aventuras de lectura personalizadas para niños de 5 a 13 años. Con el nombre de tu hijo, sus intereses y en su idioma.",
+    de: "Personalisierte Geschichten in denen dein Kind der Held ist, Kapitel mitgestaltet — und die genau so anspruchsvoll sind wie dein Kind es braucht.",
+    en: "Personalized stories where your child is the hero, shapes every chapter — and that are exactly as challenging as your child needs.",
+    fr: "Des histoires personnalisées où votre enfant est le héros, influence chaque chapitre — et qui sont exactement au niveau dont votre enfant a besoin.",
+    es: "Historias personalizadas donde tu hijo es el héroe, da forma a cada capítulo — y son exactamente tan desafiantes como tu hijo necesita.",
   },
   hero_cta: {
     de: "Jetzt kostenlos ausprobieren →",
