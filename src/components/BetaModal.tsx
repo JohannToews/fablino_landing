@@ -15,6 +15,7 @@ const BetaModal = () => {
   const [emailError, setEmailError] = useState("");
 
   const [betaCode, setBetaCode] = useState("");
+  const [betaCodeError, setBetaCodeError] = useState("");
 
   if (!isOpen) return null;
 
@@ -43,9 +44,16 @@ const BetaModal = () => {
     }
   };
 
+  const VALID_BETA_CODE = "678910";
+
   const handleBetaCode = (e: React.FormEvent) => {
     e.preventDefault();
     if (!betaCode.trim()) return;
+    if (betaCode.trim() !== VALID_BETA_CODE) {
+      setBetaCodeError(t("beta_code_invalid"));
+      return;
+    }
+    setBetaCodeError("");
     window.location.href = `https://app.fablino.eu/welcome?code=${encodeURIComponent(betaCode.trim())}`;
   };
 
@@ -144,6 +152,9 @@ const BetaModal = () => {
                   placeholder={t("beta_code_placeholder")}
                   className="w-full rounded-xl border border-input bg-background px-4 py-2.5 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                 />
+                {betaCodeError && (
+                  <p className="text-xs text-destructive">{betaCodeError}</p>
+                )}
                 <button
                   type="submit"
                   disabled={!betaCode.trim()}
