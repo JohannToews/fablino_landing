@@ -297,28 +297,28 @@ export const translations: Record<string, Record<Language, string>> = {
 
   // ===== LANGUAGE BANNER =====
   lang_headline: {
-    de: "Kindergeschichten in der Sprache eurer Familie",
-    en: "Children's stories in your family's language",
-    fr: "Des histoires pour enfants dans la langue de votre famille",
-    es: "Cuentos infantiles en el idioma de tu familia",
+    de: "Endlich genug Geschichten in eurer Sprache",
+    en: "Finally enough stories in your language",
+    fr: "Enfin assez d'histoires dans votre langue",
+    es: "Por fin suficientes historias en vuestro idioma",
   },
   lang_subline: {
-    de: "Litauisch, Ungarisch, Katalanisch, Türkisch, Bulgarisch, Polnisch, Portugiesisch — Fablino erstellt Geschichten in Sprachen, für die es vor Ort kaum Kinderbücher gibt.",
-    en: "Lithuanian, Hungarian, Catalan, Turkish, Bulgarian, Polish, Portuguese — Fablino creates stories in languages where local children's books are scarce.",
-    fr: "Lituanien, hongrois, catalan, turc, bulgare, polonais, portugais — Fablino crée des histoires dans des langues où les livres pour enfants locaux sont rares.",
-    es: "Lituano, húngaro, catalán, turco, búlgaro, polaco, portugués — Fablino crea historias en idiomas donde los libros infantiles locales son escasos.",
+    de: "Für Katalanisch, Litauisch, Ungarisch oder Türkisch gibt es kaum übersetzte Kinderbücher. Fablino erstellt Geschichten direkt in eurer Familiensprache — so liest dein Kind auch zu Hause in der Sprache, die es am besten kennt.",
+    en: "For Catalan, Lithuanian, Hungarian or Turkish, there are hardly any translated children's books. Fablino creates stories directly in your family language — so your child reads at home in the language they know best.",
+    fr: "Pour le catalan, le lituanien, le hongrois ou le turc, les livres pour enfants traduits sont rares. Fablino crée des histoires directement dans la langue de votre famille — pour que votre enfant lise aussi chez lui dans la langue qu'il connaît le mieux.",
+    es: "Para el catalán, lituano, húngaro o turco, apenas existen libros infantiles traducidos. Fablino crea historias directamente en vuestro idioma familiar — para que tu hijo también lea en casa en la lengua que mejor conoce.",
   },
   lang_highlight: {
-    de: "Damit dein Kind auch in der Familiensprache liest.",
-    en: "So your child reads in their family language too.",
-    fr: "Pour que votre enfant lise aussi dans sa langue familiale.",
-    es: "Para que tu hijo también lea en su idioma familiar.",
+    de: "",
+    en: "",
+    fr: "",
+    es: "",
   },
   lang_cta: {
-    de: "Geschichte in deiner Sprache erstellen →",
-    en: "Create a story in your language →",
-    fr: "Créer une histoire dans votre langue →",
-    es: "Crea una historia en tu idioma →",
+    de: "Jetzt ausprobieren →",
+    en: "Try it free →",
+    fr: "Essayer maintenant →",
+    es: "Pruébalo ahora →",
   },
 
   // ===== APP PREVIEW =====
