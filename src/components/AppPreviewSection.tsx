@@ -1,13 +1,36 @@
+import { useEffect, useRef } from "react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import syllablePreview from "@/assets/syllable-preview.png";
 
 const AppPreviewSection = () => {
   const { t, lang } = useLanguage();
+  const sectionRef = useRef<HTMLElement>(null);
+
+  // Re-run fade-in observer when this section mounts (language switch causes remount)
+  useEffect(() => {
+    if (!sectionRef.current) return;
+    const els = sectionRef.current.querySelectorAll(".fade-in-section");
+    if (!els.length) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    els.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, [lang]);
 
   if (lang !== "de") return null;
 
   return (
-    <section data-section="app-preview" className="section-padding bg-fablino-light-gray">
+    <section ref={sectionRef} data-section="app-preview" className="section-padding bg-fablino-light-gray">
       <div className="container-fablino text-center">
         <h2 className="mb-3">{t("preview_headline")}</h2>
         <p className="max-w-xl mx-auto mb-10">
