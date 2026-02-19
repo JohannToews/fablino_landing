@@ -209,6 +209,92 @@ export const translations: Record<string, Record<Language, string>> = {
     es: "Tú eliges los temas: valentía, empatía, trabajo en equipo. Cada aventura lleva tus valores.",
   },
 
+  // ===== UNIQUE FEATURES =====
+  unique_headline: {
+    de: "Was Fablino einzigartig macht",
+    en: "What makes Fablino unique",
+    fr: "Ce qui rend Fablino unique",
+    es: "Lo que hace único a Fablino",
+  },
+  unique_1_title: {
+    de: "Passt sich dem Leseniveau an",
+    en: "Adapts to reading level",
+    fr: "S'adapte au niveau de lecture",
+    es: "Se adapta al nivel lector",
+  },
+  unique_1_desc: {
+    de: "Wortschatz, Satzlänge und Struktur passen sich der Fähigkeit deines Kindes an — und wachsen mit ihm.",
+    en: "Vocabulary, sentence length and structure match your child's ability — and grow with it.",
+    fr: "Le vocabulaire, la longueur des phrases et la structure correspondent aux capacités de votre enfant — et évoluent avec lui.",
+    es: "El vocabulario, la longitud de las frases y la estructura se adaptan a la capacidad de tu hijo — y crecen con él.",
+  },
+  unique_2_title: {
+    de: "Personalisierte Geschichten & Kunststile",
+    en: "Personalized stories & art styles",
+    fr: "Histoires personnalisées & styles artistiques",
+    es: "Historias personalizadas y estilos de arte",
+  },
+  unique_2_desc: {
+    de: "Dein Kind ist der Held. Wähle Illustrationsstile von Bilderbuch bis Manga.",
+    en: "Your child is the hero. Choose illustration styles from storybook to manga.",
+    fr: "Votre enfant est le héros. Choisissez des styles d'illustration du livre illustré au manga.",
+    es: "Tu hijo es el héroe. Elige estilos de ilustración desde cuento hasta manga.",
+  },
+  unique_3_title: {
+    de: "Leseverständnis-Quizzes",
+    en: "Comprehension quizzes",
+    fr: "Quiz de compréhension",
+    es: "Cuestionarios de comprensión",
+  },
+  unique_3_desc: {
+    de: "Fragen nach jeder Geschichte prüfen das Verständnis und bauen den Wortschatz aus.",
+    en: "Questions after every story check understanding and build vocabulary.",
+    fr: "Des questions après chaque histoire vérifient la compréhension et enrichissent le vocabulaire.",
+    es: "Preguntas tras cada historia comprueban la comprensión y amplían el vocabulario.",
+  },
+  unique_4_title: {
+    de: "Kapitelgeschichten",
+    en: "Chapter stories",
+    fr: "Histoires à chapitres",
+    es: "Historias por capítulos",
+  },
+  unique_4_desc: {
+    de: "Mehrteilige Abenteuer, bei denen dein Kind entscheidet, was als nächstes passiert.",
+    en: "Multi-part adventures where your child decides what happens next.",
+    fr: "Des aventures en plusieurs parties où votre enfant décide de la suite.",
+    es: "Aventuras de varias partes donde tu hijo decide qué pasa después.",
+  },
+  unique_5_title: {
+    de: "14+ Sprachen",
+    en: "14+ languages",
+    fr: "14+ langues",
+    es: "14+ idiomas",
+  },
+  unique_5_desc: {
+    de: "Eine Sprache zu Hause, eine andere in der Schule? Fablino erstellt Geschichten in beiden.",
+    en: "One language at home, another at school? Fablino creates stories in both.",
+    fr: "Une langue à la maison, une autre à l'école ? Fablino crée des histoires dans les deux.",
+    es: "¿Un idioma en casa, otro en la escuela? Fablino crea historias en ambos.",
+  },
+  unique_6_title: {
+    de: "Sterne, Level & Abzeichen",
+    en: "Stars, levels & badges",
+    fr: "Étoiles, niveaux et badges",
+    es: "Estrellas, niveles e insignias",
+  },
+  unique_6_desc: {
+    de: "Lesefortschritte verfolgen, Belohnungen verdienen, Meilensteine feiern.",
+    en: "Track reading progress, earn rewards, celebrate milestones.",
+    fr: "Suivez la progression de lecture, gagnez des récompenses, célébrez les étapes.",
+    es: "Registra el progreso lector, gana recompensas, celebra hitos.",
+  },
+  unique_cta: {
+    de: "Jetzt kostenlos ausprobieren →",
+    en: "Try it free →",
+    fr: "Essayer gratuitement →",
+    es: "Pruébalo gratis →",
+  },
+
   // ===== LANGUAGE BANNER =====
   lang_headline: {
     de: "Kindergeschichten in der Sprache eurer Familie",

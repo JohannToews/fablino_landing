@@ -3,6 +3,7 @@ import HeroSection from "@/components/HeroSection";
 import SocialProofSection from "@/components/SocialProofSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import FeaturesSection from "@/components/FeaturesSection";
+import UniqueFeaturesSection from "@/components/UniqueFeaturesSection";
 import LanguagesSection from "@/components/LanguagesSection";
 import AppPreviewSection from "@/components/AppPreviewSection";
 import PricingSection from "@/components/PricingSection";
@@ -22,6 +23,7 @@ const Index = () => {
       <SocialProofSection />
       <HowItWorksSection />
       <FeaturesSection />
+      <UniqueFeaturesSection />
       <LanguagesSection />
       <AppPreviewSection />
       <PricingSection />
