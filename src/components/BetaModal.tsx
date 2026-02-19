@@ -7,6 +7,7 @@ const BetaModal = () => {
   const { isOpen, close, source } = useBetaModal();
 
   const [email, setEmail] = useState("");
+  const [consent, setConsent] = useState(false);
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [emailLoading, setEmailLoading] = useState(false);
   const [emailError, setEmailError] = useState("");
@@ -19,6 +20,10 @@ const BetaModal = () => {
     e.preventDefault();
     if (!email.trim() || !email.includes("@")) {
       setEmailError("Please enter a valid email address.");
+      return;
+    }
+    if (!consent) {
+      setEmailError("Please agree to be contacted before signing up.");
       return;
     }
     setEmailError("");
@@ -101,9 +106,20 @@ const BetaModal = () => {
                   {emailError && (
                     <p className="text-xs text-destructive">{emailError}</p>
                   )}
+                  <label className="flex items-start gap-2 cursor-pointer">
+                    <input
+                      type="checkbox"
+                      checked={consent}
+                      onChange={(e) => setConsent(e.target.checked)}
+                      className="mt-0.5 shrink-0 accent-primary w-4 h-4 rounded"
+                    />
+                    <span className="text-xs text-muted-foreground leading-relaxed">
+                      Ich stimme zu, über den Launch von Fablino kontaktiert zu werden. Keine Werbung, kein Spam — nur die wichtigsten Neuigkeiten.
+                    </span>
+                  </label>
                   <button
                     type="submit"
-                    disabled={emailLoading}
+                    disabled={emailLoading || !consent}
                     className="mt-auto bg-primary text-primary-foreground font-bold text-sm py-2.5 rounded-full shadow-fablino-orange hover:shadow-fablino-orange-hover hover:scale-[1.02] transition-all disabled:opacity-60"
                   >
                     {emailLoading ? "Sending…" : "Notify me →"}
