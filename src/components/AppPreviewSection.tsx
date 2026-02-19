@@ -13,12 +13,23 @@ const AppPreviewSection = () => {
         </p>
 
         <div className="fade-in-section inline-block">
-          <div className="max-w-[800px] mx-auto bg-fablino-dark rounded-3xl p-3 sm:p-4 shadow-fablino-xl">
+          <div className="max-w-[700px] mx-auto bg-card rounded-[1.75rem] border-[3px] border-border shadow-fablino-xl overflow-hidden flex flex-col">
+            {/* Tablet top bar with camera */}
+            <div className="flex justify-center items-center py-2 bg-card border-b border-border/50">
+              <div className="w-2 h-2 rounded-full bg-muted" />
+            </div>
+
+            {/* Screenshot */}
             <img
               src={syllablePreview}
               alt="Fablino Silbenfärbung — farbige Silben im Lesetext"
-              className="rounded-2xl w-full object-cover"
+              className="w-full object-cover"
             />
+
+            {/* Tablet bottom bar */}
+            <div className="flex justify-center items-center py-2 bg-card border-t border-border/50">
+              <div className="w-10 h-1 rounded-full bg-muted" />
+            </div>
           </div>
         </div>
       </div>
