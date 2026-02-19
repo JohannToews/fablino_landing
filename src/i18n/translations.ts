@@ -405,6 +405,12 @@ export const translations: Record<string, Record<Language, string>> = {
     es: "1 perfil infantil",
   },
   pricing_starter_f3: {
+    de: "2 Bilder pro Geschichte",
+    en: "2 images per story",
+    fr: "2 images par histoire",
+    es: "2 imágenes por historia",
+  },
+  pricing_standard_f3: {
     de: "3 Bilder pro Geschichte",
     en: "3 images per story",
     fr: "3 images par histoire",
