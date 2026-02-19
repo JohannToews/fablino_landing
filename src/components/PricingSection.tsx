@@ -1,65 +1,140 @@
-import FablinoMascot from "./FablinoMascot";
 import { trackCTA, getCTALink } from "@/hooks/useScrollAnimation";
 import { useLanguage } from "@/i18n/LanguageContext";
+
+type PricingTier = {
+  nameKey: string;
+  priceKey: string;
+  periodKey: string;
+  features: string[];
+  ctaKey: string;
+  highlight: boolean;
+  ctaStyle: "outline" | "filled";
+};
+
+const tiers: PricingTier[] = [
+  {
+    nameKey: "pricing_starter_name",
+    priceKey: "pricing_starter_price",
+    periodKey: "pricing_period",
+    features: [
+      "pricing_starter_f1",
+      "pricing_starter_f2",
+      "pricing_starter_f3",
+      "pricing_shared_f4",
+      "pricing_shared_f5",
+    ],
+    ctaKey: "pricing_cta_getstarted",
+    highlight: false,
+    ctaStyle: "outline",
+  },
+  {
+    nameKey: "pricing_standard_name",
+    priceKey: "pricing_standard_price",
+    periodKey: "pricing_period",
+    features: [
+      "pricing_standard_f1",
+      "pricing_standard_f2",
+      "pricing_starter_f3",
+      "pricing_shared_f4",
+      "pricing_shared_f5",
+      "pricing_shared_f6",
+      "pricing_shared_f7",
+    ],
+    ctaKey: "pricing_cta_getstarted",
+    highlight: true,
+    ctaStyle: "filled",
+  },
+  {
+    nameKey: "pricing_premium_name",
+    priceKey: "pricing_premium_price",
+    periodKey: "pricing_period",
+    features: [
+      "pricing_standard_f1",
+      "pricing_premium_f2",
+      "pricing_premium_f3",
+      "pricing_shared_f4",
+      "pricing_shared_f5",
+      "pricing_shared_f6",
+      "pricing_shared_f7",
+      "pricing_premium_f8",
+    ],
+    ctaKey: "pricing_cta_getstarted",
+    highlight: false,
+    ctaStyle: "outline",
+  },
+];
 
 const PricingSection = () => {
   const { t } = useLanguage();
 
-  const featureKeys = [
-    "pricing_feature_1",
-    "pricing_feature_2",
-    "pricing_feature_3",
-    "pricing_feature_4",
-    "pricing_feature_5",
-    "pricing_feature_6",
-  ];
-
   return (
     <section id="pricing" data-section="pricing" className="section-padding bg-background">
       <div className="container-fablino">
-        <h2 className="text-center mb-8">{t("pricing_headline")}</h2>
+        <h2 className="text-center mb-3">{t("pricing_headline")}</h2>
+        <p className="text-center text-muted-foreground mb-10 max-w-xl mx-auto text-base">
+          {t("pricing_subline")}
+        </p>
 
-        {/* Beta banner */}
-        <div className="fade-in-section bg-fablino-orange-bg border-2 border-primary rounded-xl p-5 text-center max-w-md mx-auto mb-8 flex items-center gap-3 justify-center">
-          <FablinoMascot size={48} />
-          <div className="text-left">
-            <p className="font-extrabold text-foreground text-lg">{t("pricing_beta_badge")}</p>
-            <p className="text-sm text-muted-foreground">{t("pricing_beta_sub")}</p>
-          </div>
+        {/* 3-column grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto items-start">
+          {tiers.map((tier, idx) => (
+            <div
+              key={idx}
+              className={`fade-in-section relative bg-card rounded-3xl p-7 flex flex-col ${
+                tier.highlight
+                  ? "border-2 border-primary shadow-fablino-orange"
+                  : "border border-border shadow-fablino-lg"
+              }`}
+            >
+              {/* Most popular badge */}
+              {tier.highlight && (
+                <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
+                  <span className="bg-primary text-primary-foreground text-xs font-bold px-4 py-1 rounded-full whitespace-nowrap">
+                    {t("pricing_most_popular")}
+                  </span>
+                </div>
+              )}
+
+              {/* Tier name */}
+              <p className="font-extrabold text-foreground text-lg mb-3">{t(tier.nameKey)}</p>
+
+              {/* Price */}
+              <div className="mb-5">
+                <span className="text-4xl font-black text-foreground">{t(tier.priceKey)}</span>
+                <span className="text-muted-foreground text-sm"> {t(tier.periodKey)}</span>
+              </div>
+
+              {/* Features */}
+              <ul className="space-y-2.5 mb-7 flex-1">
+                {tier.features.map((fKey, fi) => (
+                  <li key={fi} className="flex items-start gap-2 text-sm text-foreground">
+                    <span className="text-fablino-success font-bold mt-0.5 shrink-0">✓</span>
+                    <span>{t(fKey)}</span>
+                  </li>
+                ))}
+              </ul>
+
+              {/* CTA */}
+              <a
+                href={getCTALink("pricing")}
+                onClick={() => trackCTA("pricing")}
+                className={`block text-center font-bold text-base py-3 rounded-full transition-all ${
+                  tier.ctaStyle === "filled"
+                    ? "bg-primary text-primary-foreground shadow-fablino-orange hover:shadow-fablino-orange-hover hover:scale-[1.03]"
+                    : "bg-card text-primary border-2 border-primary hover:bg-fablino-orange-bg hover:scale-[1.02]"
+                }`}
+              >
+                {t(tier.ctaKey)}
+              </a>
+            </div>
+          ))}
         </div>
 
-        {/* Pricing card */}
-        <div className="fade-in-section max-w-sm mx-auto bg-card rounded-3xl p-10 shadow-fablino-lg border-2 border-fablino-orange-light text-center">
-          <p className="font-black text-foreground text-lg mb-1">{t("pricing_plan_name")}</p>
-          <div className="mb-1">
-            <span className="text-5xl font-black text-foreground">{t("pricing_monthly")}</span>
-            <span className="text-muted-foreground"> {t("pricing_monthly_label")}</span>
-          </div>
-          <p className="text-sm text-muted-foreground mb-6">{t("pricing_yearly")}</p>
-
-          <ul className="text-left space-y-3 mb-8">
-            {featureKeys.map((key, i) => (
-              <li key={i} className="flex items-center gap-2.5 text-foreground">
-                <span className="text-fablino-success font-bold">✓</span>
-                {t(key)}
-              </li>
-            ))}
-          </ul>
-
-          <a
-            href={getCTALink("pricing")}
-            onClick={() => trackCTA("pricing")}
-            className="block bg-primary text-primary-foreground font-bold text-lg py-3.5 rounded-full shadow-fablino-orange hover:shadow-fablino-orange-hover hover:scale-[1.03] transition-all"
-          >
-            {t("pricing_cta")}
-          </a>
-
-          <div className="mt-5 bg-fablino-orange-bg rounded-lg px-4 py-3">
-            <p className="text-sm font-bold text-foreground">{t("pricing_beta_offer")}</p>
-          </div>
-        </div>
-
-        <p className="text-center text-sm text-muted-foreground mt-6">
+        {/* Bottom note */}
+        <p className="text-center text-sm text-muted-foreground mt-8">
+          {t("pricing_credits_note")}
+        </p>
+        <p className="text-center text-xs text-muted-foreground mt-2">
           {t("pricing_footer")}
         </p>
       </div>
