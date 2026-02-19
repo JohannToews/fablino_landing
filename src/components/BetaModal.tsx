@@ -54,7 +54,7 @@ const BetaModal = () => {
       return;
     }
     setBetaCodeError("");
-    window.location.href = `https://app.fablino.eu/welcome?code=${encodeURIComponent(betaCode.trim())}`;
+    window.location.href = `https://www.fablino.eu/welcome?code=${encodeURIComponent(betaCode.trim())}`;
   };
 
   return (
