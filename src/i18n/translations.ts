@@ -635,4 +635,108 @@ export const translations: Record<string, Record<Language, string>> = {
     fr: "Essayer maintenant →",
     es: "Pruébalo ahora →",
   },
+
+  // ===== BETA MODAL =====
+  beta_title: {
+    de: "Fablino ist in der geschlossenen Beta 🦊",
+    en: "Fablino is in closed beta 🦊",
+    fr: "Fablino est en bêta fermée 🦊",
+    es: "Fablino está en beta cerrada 🦊",
+  },
+  beta_subtitle: {
+    de: "Wir testen mit einer kleinen Gruppe von Familien vor dem offiziellen Launch.",
+    en: "We're testing with a small group of families before our official launch.",
+    fr: "Nous testons avec un petit groupe de familles avant notre lancement officiel.",
+    es: "Estamos probando con un pequeño grupo de familias antes de nuestro lanzamiento oficial.",
+  },
+  beta_waitlist_title: {
+    de: "Auf dem Laufenden bleiben",
+    en: "Stay in the loop",
+    fr: "Rester informé",
+    es: "Mantenerse al tanto",
+  },
+  beta_waitlist_subtitle: {
+    de: "Werde benachrichtigt, wenn Fablino startet.",
+    en: "Get notified when Fablino launches.",
+    fr: "Sois notifié quand Fablino sera lancé.",
+    es: "Recibe una notificación cuando Fablino lance.",
+  },
+  beta_waitlist_placeholder: {
+    de: "deine@email.de",
+    en: "your@email.com",
+    fr: "ton@email.fr",
+    es: "tu@email.es",
+  },
+  beta_waitlist_cta: {
+    de: "Benachrichtige mich →",
+    en: "Notify me →",
+    fr: "Me notifier →",
+    es: "Notificarme →",
+  },
+  beta_waitlist_sending: {
+    de: "Wird gesendet…",
+    en: "Sending…",
+    fr: "Envoi en cours…",
+    es: "Enviando…",
+  },
+  beta_waitlist_success: {
+    de: "Du bist auf der Liste! 🎉",
+    en: "You're on the list! 🎉",
+    fr: "Tu es sur la liste ! 🎉",
+    es: "¡Estás en la lista! 🎉",
+  },
+  beta_waitlist_success_sub: {
+    de: "Wir melden uns bei dir.",
+    en: "We'll be in touch.",
+    fr: "On te contactera bientôt.",
+    es: "Nos pondremos en contacto contigo.",
+  },
+  beta_consent: {
+    de: "Ich stimme zu, über den Launch von Fablino kontaktiert zu werden. Keine Werbung, kein Spam — nur die wichtigsten Neuigkeiten.",
+    en: "I agree to be contacted about the Fablino launch. No ads, no spam — just the important news.",
+    fr: "J'accepte d'être contacté(e) pour le lancement de Fablino. Pas de pub, pas de spam — juste l'essentiel.",
+    es: "Acepto ser contactado/a sobre el lanzamiento de Fablino. Sin anuncios, sin spam — solo las novedades importantes.",
+  },
+  beta_error_email: {
+    de: "Bitte gib eine gültige E-Mail-Adresse ein.",
+    en: "Please enter a valid email address.",
+    fr: "Veuillez saisir une adresse e-mail valide.",
+    es: "Por favor, introduce una dirección de correo válida.",
+  },
+  beta_error_consent: {
+    de: "Bitte stimme zu, bevor du dich anmeldest.",
+    en: "Please agree to be contacted before signing up.",
+    fr: "Veuillez accepter d'être contacté(e) avant de vous inscrire.",
+    es: "Por favor, acepta ser contactado/a antes de registrarte.",
+  },
+  beta_error_generic: {
+    de: "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    en: "Something went wrong. Please try again.",
+    fr: "Une erreur s'est produite. Veuillez réessayer.",
+    es: "Algo salió mal. Por favor, inténtalo de nuevo.",
+  },
+  beta_code_title: {
+    de: "Ich habe einen Beta-Code",
+    en: "I have a beta code",
+    fr: "J'ai un code bêta",
+    es: "Tengo un código beta",
+  },
+  beta_code_subtitle: {
+    de: "Bist du schon Teil unserer Beta? Gib deinen Code ein.",
+    en: "Already part of our beta? Enter your code.",
+    fr: "Tu fais déjà partie de notre bêta ? Entre ton code.",
+    es: "¿Ya formas parte de nuestra beta? Introduce tu código.",
+  },
+  beta_code_placeholder: {
+    de: "Beta-Code eingeben",
+    en: "Enter beta code",
+    fr: "Entrer le code bêta",
+    es: "Introduce el código beta",
+  },
+  beta_code_cta: {
+    de: "Beta betreten →",
+    en: "Enter beta →",
+    fr: "Accéder à la bêta →",
+    es: "Entrar a la beta →",
+  },
 };

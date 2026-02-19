@@ -2,9 +2,11 @@ import { useState } from "react";
 import { X } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useBetaModal } from "@/context/BetaModalContext";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const BetaModal = () => {
   const { isOpen, close, source } = useBetaModal();
+  const { t } = useLanguage();
 
   const [email, setEmail] = useState("");
   const [consent, setConsent] = useState(false);
@@ -19,11 +21,11 @@ const BetaModal = () => {
   const handleWaitlist = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email.trim() || !email.includes("@")) {
-      setEmailError("Please enter a valid email address.");
+      setEmailError(t("beta_error_email"));
       return;
     }
     if (!consent) {
-      setEmailError("Please agree to be contacted before signing up.");
+      setEmailError(t("beta_error_consent"));
       return;
     }
     setEmailError("");
@@ -35,7 +37,7 @@ const BetaModal = () => {
       if (error) throw error;
       setEmailSubmitted(true);
     } catch {
-      setEmailError("Something went wrong. Please try again.");
+      setEmailError(t("beta_error_generic"));
     } finally {
       setEmailLoading(false);
     }
@@ -70,10 +72,10 @@ const BetaModal = () => {
           {/* Header */}
           <div className="text-center pt-8 px-6 pb-4">
             <h2 className="text-2xl font-black text-foreground mb-2">
-              Fablino is in closed beta 🦊
+              {t("beta_title")}
             </h2>
             <p className="text-muted-foreground text-sm max-w-md mx-auto">
-              We're testing with a small group of families before our official launch.
+              {t("beta_subtitle")}
             </p>
           </div>
 
@@ -81,16 +83,16 @@ const BetaModal = () => {
           <div className="grid sm:grid-cols-2 gap-4 p-6 pt-3">
             {/* Left — Waitlist */}
             <div className="bg-fablino-orange-bg border border-primary/20 rounded-2xl p-5 flex flex-col">
-              <p className="font-extrabold text-foreground text-base mb-1">Stay in the loop</p>
+              <p className="font-extrabold text-foreground text-base mb-1">{t("beta_waitlist_title")}</p>
               <p className="text-sm text-muted-foreground mb-4">
-                Get notified when Fablino launches.
+                {t("beta_waitlist_subtitle")}
               </p>
 
               {emailSubmitted ? (
                 <div className="flex-1 flex items-center justify-center">
                   <p className="text-center font-bold text-foreground text-base">
-                    You're on the list! 🎉<br />
-                    <span className="font-normal text-sm text-muted-foreground">We'll be in touch.</span>
+                    {t("beta_waitlist_success")}<br />
+                    <span className="font-normal text-sm text-muted-foreground">{t("beta_waitlist_success_sub")}</span>
                   </p>
                 </div>
               ) : (
@@ -99,7 +101,7 @@ const BetaModal = () => {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="your@email.com"
+                    placeholder={t("beta_waitlist_placeholder")}
                     className="w-full rounded-xl border border-input bg-background px-4 py-2.5 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                     required
                   />
@@ -114,7 +116,7 @@ const BetaModal = () => {
                       className="mt-0.5 shrink-0 accent-primary w-4 h-4 rounded"
                     />
                     <span className="text-xs text-muted-foreground leading-relaxed">
-                      Ich stimme zu, über den Launch von Fablino kontaktiert zu werden. Keine Werbung, kein Spam — nur die wichtigsten Neuigkeiten.
+                      {t("beta_consent")}
                     </span>
                   </label>
                   <button
@@ -122,7 +124,7 @@ const BetaModal = () => {
                     disabled={emailLoading || !consent}
                     className="mt-auto bg-primary text-primary-foreground font-bold text-sm py-2.5 rounded-full shadow-fablino-orange hover:shadow-fablino-orange-hover hover:scale-[1.02] transition-all disabled:opacity-60"
                   >
-                    {emailLoading ? "Sending…" : "Notify me →"}
+                    {emailLoading ? t("beta_waitlist_sending") : t("beta_waitlist_cta")}
                   </button>
                 </form>
               )}
@@ -130,16 +132,16 @@ const BetaModal = () => {
 
             {/* Right — Beta code */}
             <div className="bg-muted/40 border border-border rounded-2xl p-5 flex flex-col">
-              <p className="font-extrabold text-foreground text-base mb-1">I have a beta code</p>
+              <p className="font-extrabold text-foreground text-base mb-1">{t("beta_code_title")}</p>
               <p className="text-sm text-muted-foreground mb-4">
-                Already part of our beta? Enter your code.
+                {t("beta_code_subtitle")}
               </p>
               <form onSubmit={handleBetaCode} className="flex flex-col gap-3 flex-1">
                 <input
                   type="text"
                   value={betaCode}
                   onChange={(e) => setBetaCode(e.target.value)}
-                  placeholder="Enter beta code"
+                  placeholder={t("beta_code_placeholder")}
                   className="w-full rounded-xl border border-input bg-background px-4 py-2.5 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
                 />
                 <button
@@ -147,7 +149,7 @@ const BetaModal = () => {
                   disabled={!betaCode.trim()}
                   className="mt-auto bg-card text-primary border-2 border-primary font-bold text-sm py-2.5 rounded-full hover:bg-fablino-orange-bg hover:scale-[1.02] transition-all disabled:opacity-40"
                 >
-                  Enter beta →
+                  {t("beta_code_cta")}
                 </button>
               </form>
             </div>
