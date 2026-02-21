@@ -45,6 +45,8 @@ const Navbar = () => {
           <button onClick={() => scrollTo("how-it-works")} className="text-sm font-semibold text-fablino-dark hover:text-primary transition-colors">{t("nav_how")}</button>
           <button onClick={() => scrollTo("features")} className="text-sm font-semibold text-fablino-dark hover:text-primary transition-colors">{t("nav_features")}</button>
           <button onClick={() => scrollTo("pricing")} className="text-sm font-semibold text-fablino-dark hover:text-primary transition-colors">{t("nav_pricing")}</button>
+          <button onClick={() => scrollTo("faq")} className="text-sm font-semibold text-fablino-dark hover:text-primary transition-colors">{t("nav_faq")}</button>
+          <button onClick={() => scrollTo("our-story")} className="text-sm font-semibold text-fablino-dark hover:text-primary transition-colors">{t("nav_story")}</button>
 
           {/* Language flags */}
           <div className="flex items-center gap-1">
@@ -98,6 +100,8 @@ const Navbar = () => {
           <button onClick={() => scrollTo("how-it-works")} className="block w-full text-left font-semibold text-fablino-dark py-2">{t("nav_how")}</button>
           <button onClick={() => scrollTo("features")} className="block w-full text-left font-semibold text-fablino-dark py-2">{t("nav_features")}</button>
           <button onClick={() => scrollTo("pricing")} className="block w-full text-left font-semibold text-fablino-dark py-2">{t("nav_pricing")}</button>
+          <button onClick={() => scrollTo("faq")} className="block w-full text-left font-semibold text-fablino-dark py-2">{t("nav_faq")}</button>
+          <button onClick={() => scrollTo("our-story")} className="block w-full text-left font-semibold text-fablino-dark py-2">{t("nav_story")}</button>
           <button
             onClick={() => { trackCTA("nav"); open("nav"); setMenuOpen(false); }}
             className="block w-full text-center bg-primary text-primary-foreground font-bold px-6 py-3 rounded-full shadow-fablino-orange"
