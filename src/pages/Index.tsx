@@ -7,9 +7,8 @@ import UniqueFeaturesSection from "@/components/UniqueFeaturesSection";
 import LanguagesSection from "@/components/LanguagesSection";
 import AppPreviewSection from "@/components/AppPreviewSection";
 import PricingSection from "@/components/PricingSection";
-import FaqSection from "@/components/FaqSection";
-import OurStorySection from "@/components/OurStorySection";
 import TrustSection from "@/components/TrustSection";
+import FaqSection from "@/components/FaqSection";
 import FooterSection from "@/components/FooterSection";
 import MobileStickyCtaBar from "@/components/MobileStickyCtaBar";
 import { useScrollAnimation, useSectionTracking } from "@/hooks/useScrollAnimation";
@@ -29,9 +28,8 @@ const Index = () => {
       <LanguagesSection />
       <AppPreviewSection />
       <PricingSection />
-      <FaqSection />
-      <OurStorySection />
       <TrustSection />
+      <FaqSection />
       <FooterSection />
       <MobileStickyCtaBar />
     </div>
