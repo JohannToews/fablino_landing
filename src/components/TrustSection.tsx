@@ -6,17 +6,17 @@ const TrustSection = () => {
 
   const badges = [
     {
-      icon: <span className="text-5xl">🇪🇺</span>,
+      icon: <span className="text-2xl md:text-5xl">🇪🇺</span>,
       titleKey: "trust_1_title",
       descKey: "trust_1_desc",
     },
     {
-      icon: <ShieldCheck size={40} className="text-fablino-teal" strokeWidth={1.75} />,
+      icon: <ShieldCheck className="text-fablino-teal w-5 h-5 md:w-10 md:h-10" strokeWidth={1.75} />,
       titleKey: "trust_2_title",
       descKey: "trust_2_desc",
     },
     {
-      icon: <HeartHandshake size={40} className="text-fablino-teal" strokeWidth={1.75} />,
+      icon: <HeartHandshake className="text-fablino-teal w-5 h-5 md:w-10 md:h-10" strokeWidth={1.75} />,
       titleKey: "trust_3_title",
       descKey: "trust_3_desc",
     },
@@ -25,12 +25,12 @@ const TrustSection = () => {
   return (
     <section data-section="trust" className="section-padding bg-fablino-light-gray">
       <div className="container-fablino">
-        <div className="grid md:grid-cols-3 gap-6 mb-10">
+        <div className="grid grid-cols-3 gap-2 md:gap-6 mb-10">
           {badges.map((b, i) => (
-            <div key={i} className="fade-in-section bg-card rounded-2xl p-7 text-center shadow-fablino hover-lift">
-              <div className="flex justify-center mb-3">{b.icon}</div>
-              <h3 className="mb-2">{t(b.titleKey)}</h3>
-              <p className="text-sm">{t(b.descKey)}</p>
+            <div key={i} className="fade-in-section bg-card rounded-xl md:rounded-2xl p-3 md:p-7 text-center shadow-fablino hover-lift">
+              <div className="flex justify-center mb-1 md:mb-3">{b.icon}</div>
+              <h3 className="text-xs md:text-xl mb-0.5 md:mb-2">{t(b.titleKey)}</h3>
+              <p className="text-[10px] md:text-sm leading-tight md:leading-relaxed">{t(b.descKey)}</p>
             </div>
           ))}
         </div>
