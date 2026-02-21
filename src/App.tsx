@@ -8,6 +8,7 @@ import { LanguageProvider } from "@/i18n/LanguageContext";
 import { BetaModalProvider } from "@/context/BetaModalContext";
 import BetaModal from "@/components/BetaModal";
 import Index from "./pages/Index";
+import OurStory from "./pages/OurStory";
 import Privacy from "./pages/Privacy";
 import Terms from "./pages/Terms";
 import Impressum from "./pages/Impressum";
@@ -34,6 +35,7 @@ const App = () => (
             <BetaModal />
             <Routes>
               <Route path="/" element={<Index />} />
+              <Route path="/our-story" element={<OurStory />} />
               <Route path="/privacy" element={<Privacy />} />
               <Route path="/terms" element={<Terms />} />
               <Route path="/impressum" element={<Impressum />} />

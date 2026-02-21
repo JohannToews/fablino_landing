@@ -776,6 +776,7 @@ export const translations: Record<string, Record<Language, string>> = {
     fr: "Tout ce que vous devez savoir sur Fablino",
     es: "Todo lo que necesitas saber sobre Fablino",
   },
+  // 1 = old 1
   faq_1_q: {
     de: "Was ist Fablino?",
     en: "What is Fablino?",
@@ -788,173 +789,122 @@ export const translations: Record<string, Record<Language, string>> = {
     fr: "Fablino est une application de lecture alimentée par l'IA pour les enfants de 6 à 10 ans. L'application crée des histoires personnalisées avec des images, des questions de compréhension et un système de récompenses – le tout adapté à l'âge, aux intérêts et à la langue de votre enfant.",
     es: "Fablino es una app de lectura impulsada por IA para niños de 6 a 10 años. La app crea historias personalizadas con imágenes, preguntas de comprensión y un sistema de recompensas – todo adaptado a la edad, intereses e idioma de tu hijo.",
   },
+  // 2 = old 3
   faq_2_q: {
-    de: "Für welche Altersgruppe ist Fablino geeignet?",
-    en: "What age group is Fablino for?",
-    fr: "Pour quelle tranche d'âge Fablino est-il adapté ?",
-    es: "¿Para qué grupo de edad es Fablino?",
-  },
-  faq_2_a: {
-    de: "Fablino richtet sich an Kinder im Alter von 6 bis 10 Jahren – von Leseanfängern bis zu fortgeschrittenen jungen Lesern. Die Geschichten passen sich automatisch an das Leseniveau an.",
-    en: "Fablino is designed for children aged 6 to 10 – from beginner readers to advanced young readers. Stories automatically adapt to the reading level.",
-    fr: "Fablino s'adresse aux enfants de 6 à 10 ans – des lecteurs débutants aux jeunes lecteurs avancés. Les histoires s'adaptent automatiquement au niveau de lecture.",
-    es: "Fablino está diseñado para niños de 6 a 10 años – desde lectores principiantes hasta jóvenes lectores avanzados. Las historias se adaptan automáticamente al nivel de lectura.",
-  },
-  faq_3_q: {
     de: "Welche Sprachen werden unterstützt?",
     en: "Which languages are supported?",
     fr: "Quelles langues sont prises en charge ?",
     es: "¿Qué idiomas están disponibles?",
   },
-  faq_3_a: {
+  faq_2_a: {
     de: "Fablino unterstützt mehrere Sprachen, darunter Deutsch, Französisch, Spanisch, Englisch und weitere europäische Sprachen. Neue Sprachen werden laufend ergänzt. Perfekt für mehrsprachige Familien, die Lesekompetenz in mehreren Sprachen fördern möchten.",
     en: "Fablino supports multiple languages including German, French, Spanish, English and more European languages. New languages are added continuously. Perfect for multilingual families who want to develop reading skills in multiple languages.",
     fr: "Fablino prend en charge plusieurs langues, dont l'allemand, le français, l'espagnol, l'anglais et d'autres langues européennes. De nouvelles langues sont ajoutées régulièrement. Parfait pour les familles multilingues.",
     es: "Fablino admite varios idiomas, incluyendo alemán, francés, español, inglés y otros idiomas europeos. Se añaden nuevos idiomas continuamente. Perfecto para familias multilingües.",
   },
-  faq_4_q: {
+  // 3 = old 4
+  faq_3_q: {
     de: "Wie funktioniert die Personalisierung?",
     en: "How does personalization work?",
     fr: "Comment fonctionne la personnalisation ?",
     es: "¿Cómo funciona la personalización?",
   },
-  faq_4_a: {
+  faq_3_a: {
     de: "Dein Kind wählt Themen, die es interessieren – z. B. Tiere, Weltraum, Piraten oder Magie. Die KI erstellt daraus einzigartige Geschichten mit passenden Illustrationen. Keine Geschichte wird zweimal erzählt.",
     en: "Your child chooses topics they're interested in – e.g. animals, space, pirates or magic. The AI creates unique stories with matching illustrations. No story is ever told twice.",
     fr: "Votre enfant choisit les thèmes qui l'intéressent – animaux, espace, pirates ou magie. L'IA crée des histoires uniques avec des illustrations assorties. Aucune histoire n'est racontée deux fois.",
     es: "Tu hijo elige los temas que le interesan – animales, espacio, piratas o magia. La IA crea historias únicas con ilustraciones a juego. Ninguna historia se cuenta dos veces.",
   },
-  faq_5_q: {
+  // 4 = old 5
+  faq_4_q: {
     de: "Ist Fablino sicher für mein Kind?",
     en: "Is Fablino safe for my child?",
     fr: "Fablino est-il sûr pour mon enfant ?",
     es: "¿Es Fablino seguro para mi hijo?",
   },
-  faq_5_a: {
+  faq_4_a: {
     de: "Ja. Alle Inhalte werden altersgerecht generiert und gefiltert. Fablino ist vollständig DSGVO-konform und speichert keine persönlichen Daten von Kindern ohne Einwilligung der Eltern. Es gibt keine Werbung und keine In-App-Käufe.",
     en: "Yes. All content is generated and filtered age-appropriately. Fablino is fully GDPR compliant and stores no personal data from children without parental consent. There are no ads and no in-app purchases.",
     fr: "Oui. Tout le contenu est généré et filtré de manière adaptée à l'âge. Fablino est entièrement conforme au RGPD et ne stocke aucune donnée personnelle des enfants sans le consentement des parents. Pas de publicité ni d'achats intégrés.",
     es: "Sí. Todo el contenido se genera y filtra de forma apropiada para la edad. Fablino cumple totalmente con el RGPD y no almacena datos personales de niños sin el consentimiento de los padres. Sin publicidad ni compras dentro de la app.",
   },
-  faq_6_q: {
+  // 5 = old 6
+  faq_5_q: {
     de: "Wie viel kostet Fablino?",
     en: "How much does Fablino cost?",
     fr: "Combien coûte Fablino ?",
     es: "¿Cuánto cuesta Fablino?",
   },
-  faq_6_a: {
+  faq_5_a: {
     de: "Fablino bietet verschiedene Abo-Modelle ab 2,99 €/Monat. Es gibt eine kostenlose Testphase, damit du die App ohne Risiko ausprobieren kannst.",
     en: "Fablino offers various subscription plans starting at €2.99/month. There's a free trial so you can try the app risk-free.",
     fr: "Fablino propose différents abonnements à partir de 2,99 €/mois. Il y a une période d'essai gratuite pour tester l'application sans risque.",
     es: "Fablino ofrece varios planes de suscripción desde 2,99 €/mes. Hay un período de prueba gratuito para probar la app sin riesgo.",
   },
-  faq_7_q: {
+  // 6 = old 7
+  faq_6_q: {
     de: "Auf welchen Geräten läuft Fablino?",
     en: "What devices does Fablino work on?",
     fr: "Sur quels appareils Fablino fonctionne-t-il ?",
     es: "¿En qué dispositivos funciona Fablino?",
   },
-  faq_7_a: {
+  faq_6_a: {
     de: "Fablino funktioniert auf Tablets und Smartphones (iOS & Android) sowie im Browser. Die App ist für Tablets optimiert – ideal fürs Lesen vor dem Schlafengehen oder unterwegs.",
     en: "Fablino works on tablets and smartphones (iOS & Android) as well as in the browser. The app is optimized for tablets – perfect for bedtime reading or on the go.",
     fr: "Fablino fonctionne sur tablettes et smartphones (iOS & Android) ainsi que dans le navigateur. L'application est optimisée pour les tablettes – idéale pour la lecture au coucher ou en déplacement.",
     es: "Fablino funciona en tabletas y smartphones (iOS y Android) así como en el navegador. La app está optimizada para tabletas – ideal para leer antes de dormir o en cualquier lugar.",
   },
-  faq_8_q: {
-    de: "Kann mein Kind Fablino alleine nutzen?",
-    en: "Can my child use Fablino on their own?",
-    fr: "Mon enfant peut-il utiliser Fablino seul ?",
-    es: "¿Puede mi hijo usar Fablino solo?",
-  },
-  faq_8_a: {
-    de: "Ja! Die Benutzeroberfläche ist kindgerecht und intuitiv gestaltet. Kinder können selbstständig Geschichten auswählen und lesen. Eltern behalten über das Eltern-Dashboard den Überblick.",
-    en: "Yes! The interface is child-friendly and intuitive. Children can independently choose and read stories. Parents keep an overview through the parent dashboard.",
-    fr: "Oui ! L'interface est adaptée aux enfants et intuitive. Les enfants peuvent choisir et lire des histoires de manière autonome. Les parents gardent une vue d'ensemble via le tableau de bord parental.",
-    es: "¡Sí! La interfaz es amigable para niños e intuitiva. Los niños pueden elegir y leer historias de forma independiente. Los padres mantienen el control a través del panel de padres.",
-  },
-  faq_9_q: {
+  // 7 = old 9
+  faq_7_q: {
     de: "Was sind die Verständnisfragen nach der Geschichte?",
     en: "What are the comprehension questions after the story?",
     fr: "Que sont les questions de compréhension après l'histoire ?",
     es: "¿Qué son las preguntas de comprensión después de la historia?",
   },
-  faq_9_a: {
+  faq_7_a: {
     de: "Nach jeder Geschichte beantwortet dein Kind kurze Quizfragen zum Inhalt. Das fördert das Leseverständnis und wird mit Sternen und Abzeichen belohnt – spielerisch und motivierend.",
     en: "After each story, your child answers short quiz questions about the content. This builds reading comprehension and is rewarded with stars and badges – playful and motivating.",
     fr: "Après chaque histoire, votre enfant répond à de courtes questions quiz sur le contenu. Cela développe la compréhension de lecture et est récompensé par des étoiles et des badges – ludique et motivant.",
     es: "Después de cada historia, tu hijo responde preguntas cortas sobre el contenido. Esto fomenta la comprensión lectora y se recompensa con estrellas e insignias – de forma lúdica y motivadora.",
   },
-  faq_10_q: {
+  // 8 = old 10
+  faq_8_q: {
     de: "Wie funktioniert das Belohnungssystem?",
     en: "How does the reward system work?",
     fr: "Comment fonctionne le système de récompenses ?",
     es: "¿Cómo funciona el sistema de recompensas?",
   },
-  faq_10_a: {
+  faq_8_a: {
     de: "Kinder sammeln Sterne für gelesene Geschichten und richtig beantwortete Fragen. Sie steigen durch Level auf \u2013 vom \u201ELesefuchs\u201C bis zum \u201EFablino Meister\u201C \u2013 und schalten dabei Abzeichen und neue Inhalte frei.",
     en: "Children collect stars for reading stories and answering questions correctly. They advance through levels – from 'Reading Fox' to 'Fablino Master' – unlocking badges and new content along the way.",
     fr: "Les enfants collectent des étoiles pour les histoires lues et les bonnes réponses. Ils progressent à travers les niveaux – du « Renard Lecteur » au « Maître Fablino » – et débloquent des badges et de nouveaux contenus.",
     es: "Los niños coleccionan estrellas por leer historias y responder preguntas correctamente. Avanzan por niveles – de 'Zorro Lector' a 'Maestro Fablino' – desbloqueando insignias y nuevo contenido.",
   },
-  faq_11_q: {
+  // 9 = old 11
+  faq_9_q: {
     de: "Kann ich mehrere Kinder mit einem Konto nutzen?",
     en: "Can I use multiple children with one account?",
     fr: "Puis-je utiliser plusieurs enfants avec un seul compte ?",
     es: "¿Puedo usar varios niños con una sola cuenta?",
   },
-  faq_11_a: {
+  faq_9_a: {
     de: "Ja, du kannst mehrere Kinderprofile anlegen. Jedes Profil hat eigene Interessen, ein eigenes Leseniveau und einen eigenen Fortschritt.",
     en: "Yes, you can create multiple child profiles. Each profile has its own interests, reading level and progress.",
     fr: "Oui, vous pouvez créer plusieurs profils enfants. Chaque profil a ses propres intérêts, son propre niveau de lecture et sa propre progression.",
     es: "Sí, puedes crear varios perfiles infantiles. Cada perfil tiene sus propios intereses, nivel de lectura y progreso.",
   },
-  faq_12_q: {
-    de: "Braucht mein Kind eine Internetverbindung?",
-    en: "Does my child need an internet connection?",
-    fr: "Mon enfant a-t-il besoin d'une connexion internet ?",
-    es: "¿Necesita mi hijo conexión a internet?",
-  },
-  faq_12_a: {
-    de: "Ja, für das Erstellen neuer Geschichten ist eine Internetverbindung nötig, da die Inhalte in Echtzeit generiert werden. Bereits gelesene Geschichten können auch offline verfügbar sein.",
-    en: "Yes, an internet connection is needed to create new stories since content is generated in real-time. Previously read stories can also be available offline.",
-    fr: "Oui, une connexion internet est nécessaire pour créer de nouvelles histoires car le contenu est généré en temps réel. Les histoires déjà lues peuvent être disponibles hors ligne.",
-    es: "Sí, se necesita conexión a internet para crear nuevas historias ya que el contenido se genera en tiempo real. Las historias ya leídas pueden estar disponibles sin conexión.",
-  },
-  faq_13_q: {
-    de: "Wer steckt hinter Fablino?",
-    en: "Who is behind Fablino?",
-    fr: "Qui est derrière Fablino ?",
-    es: "¿Quién está detrás de Fablino?",
-  },
-  faq_13_a: {
-    de: "Fablino wurde von einer mehrsprachigen Familie in Belgien entwickelt – aus eigener Erfahrung mit den Herausforderungen, Kinder in mehreren Sprachen zum Lesen zu motivieren.",
-    en: "Fablino was developed by a multilingual family in Belgium – from firsthand experience with the challenges of motivating children to read in multiple languages.",
-    fr: "Fablino a été développé par une famille multilingue en Belgique – à partir de l'expérience directe des défis de motiver les enfants à lire dans plusieurs langues.",
-    es: "Fablino fue desarrollado por una familia multilingüe en Bélgica – a partir de la experiencia directa con los desafíos de motivar a los niños a leer en varios idiomas.",
-  },
-  faq_14_q: {
+  // 10 = old 14
+  faq_10_q: {
     de: "Wie unterscheidet sich Fablino von anderen Lese-Apps?",
     en: "How is Fablino different from other reading apps?",
     fr: "En quoi Fablino se distingue-t-il des autres applications de lecture ?",
     es: "¿En qué se diferencia Fablino de otras apps de lectura?",
   },
-  faq_14_a: {
+  faq_10_a: {
     de: "Fablino erstellt jede Geschichte individuell per KI – keine vorgefertigten Texte. Die Kombination aus Personalisierung, Mehrsprachigkeit, Verständnisfragen und Gamification ist einzigartig auf dem europäischen Markt.",
     en: "Fablino creates each story individually using AI – no pre-made texts. The combination of personalization, multilingualism, comprehension questions and gamification is unique in the European market.",
     fr: "Fablino crée chaque histoire individuellement grâce à l'IA – pas de textes préfabriqués. La combinaison de personnalisation, multilinguisme, questions de compréhension et gamification est unique sur le marché européen.",
     es: "Fablino crea cada historia individualmente con IA – sin textos prefabricados. La combinación de personalización, multilingüismo, preguntas de comprensión y gamificación es única en el mercado europeo.",
-  },
-  faq_15_q: {
-    de: "Wie kann ich Fablino testen?",
-    en: "How can I try Fablino?",
-    fr: "Comment puis-je essayer Fablino ?",
-    es: "¿Cómo puedo probar Fablino?",
-  },
-  faq_15_a: {
-    de: "Einfach auf fablino.eu registrieren und die kostenlose Testphase starten. Du brauchst keine Kreditkarte, um die App auszuprobieren.",
-    en: "Simply register at fablino.eu and start the free trial. You don't need a credit card to try the app.",
-    fr: "Inscrivez-vous simplement sur fablino.eu et commencez la période d'essai gratuite. Pas besoin de carte bancaire pour essayer l'application.",
-    es: "Simplemente regístrate en fablino.eu y comienza el período de prueba gratuito. No necesitas tarjeta de crédito para probar la app.",
   },
 
   // ===== OUR STORY =====
