@@ -50,9 +50,9 @@ const HeroSection = () => {
         </div>
 
         {/* Tablet mockup + Mascot */}
-        <div className="flex justify-center items-end gap-4 relative animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+        <div className="flex justify-center relative animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
           {/* Tablet frame */}
-          <div className="w-[300px] sm:w-[330px] bg-card rounded-[1.75rem] border-[5px] border-fablino-light-gray shadow-fablino-xl overflow-hidden flex flex-col">
+          <div className="w-[340px] sm:w-[360px] bg-card rounded-[1.75rem] border-[5px] border-fablino-light-gray shadow-fablino-xl overflow-hidden flex flex-col">
             {/* Tablet top bar with camera */}
             <div className="flex justify-center items-center py-2 bg-card border-b border-fablino-light-gray/50">
               <div className="w-2 h-2 rounded-full bg-fablino-light-gray" />
@@ -98,12 +98,12 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Mascot beside tablet */}
-          <div className="animate-float flex-shrink-0">
+          {/* Mascot as overlay, bottom-right of tablet */}
+          <div className="animate-float absolute -bottom-4 -right-2 sm:right-4 md:-right-6">
             <img
               src={fablinoMascot}
               alt="Fablino Maskottchen"
-              className="w-24 sm:w-28 drop-shadow-lg"
+              className="w-20 sm:w-24 md:w-28 drop-shadow-lg"
             />
           </div>
         </div>

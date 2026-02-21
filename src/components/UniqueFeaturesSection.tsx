@@ -17,17 +17,17 @@ const UniqueFeaturesSection = () => {
   return (
     <section id="unique" data-section="unique" className="section-padding bg-accent">
       <div className="container-fablino">
-        <h2 className="text-center mb-12">{t("unique_headline")}</h2>
+        <h2 className="text-center mb-6 md:mb-12">{t("unique_headline")}</h2>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 mb-8 md:mb-12">
           {uniqueCards.map(({ Icon, titleKey, descKey }, i) => (
             <div
               key={i}
-              className="fade-in-section bg-card rounded-2xl p-8 shadow-sm hover-lift flex flex-col gap-3"
+              className="fade-in-section bg-card rounded-xl md:rounded-2xl p-4 md:p-8 shadow-sm hover-lift flex flex-col gap-1.5 md:gap-3"
             >
-              <Icon size={32} className="text-primary mb-1" />
-              <h3 className="text-lg font-bold text-foreground">{t(titleKey)}</h3>
-              <p className="text-base text-foreground/75 leading-relaxed">{t(descKey)}</p>
+              <Icon size={24} className="text-primary mb-0.5 md:mb-1 md:w-8 md:h-8" />
+              <h3 className="text-sm md:text-lg font-bold text-foreground leading-tight">{t(titleKey)}</h3>
+              <p className="text-xs md:text-base text-foreground/75 leading-snug md:leading-relaxed">{t(descKey)}</p>
             </div>
           ))}
         </div>
