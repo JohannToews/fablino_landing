@@ -91,10 +91,10 @@ export const translations: Record<string, Record<Language, string>> = {
     es: "Lo que dicen los padres sobre Fablino",
   },
   testimonial_1_quote: {
-    de: "Seit Fablino fragt mein Sohn jeden Abend nach einer neuen Geschichte. Das hatten wir mit keinem Buch geschafft.",
-    en: "Since Fablino, my son asks for a new story every evening. We never achieved that with any book.",
-    fr: "Depuis Fablino, mon fils demande une nouvelle histoire chaque soir. On n'avait jamais réussi ça avec aucun livre.",
-    es: "Desde Fablino, mi hijo pide una nueva historia cada noche. Nunca lo habíamos logrado con ningún libro.",
+    de: "Noah liebt es, die Fragen nach jeder Geschichte zu beantworten \u2013 er merkt gar nicht, dass er dabei Leseverst\u00e4ndnis \u00fcbt!",
+    en: "Noah loves answering the questions after each story \u2013 he doesn't even realize he's practicing reading comprehension!",
+    fr: "Noah adore r\u00e9pondre aux questions apr\u00e8s chaque histoire \u2013 il ne r\u00e9alise m\u00eame pas qu'il travaille sa compr\u00e9hension de lecture\u00a0!",
+    es: "\u00a1A Noah le encanta responder las preguntas despu\u00e9s de cada historia \u2013 ni siquiera se da cuenta de que est\u00e1 practicando comprensi\u00f3n lectora!",
   },
   testimonial_1_author: {
     de: "— Sarah, Mama von Noah (7)",
