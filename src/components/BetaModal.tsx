@@ -6,7 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 
 const BetaModal = () => {
   const { isOpen, close, source } = useBetaModal();
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   const [email, setEmail] = useState("");
   const [consent, setConsent] = useState(false);
@@ -54,7 +54,7 @@ const BetaModal = () => {
       return;
     }
     setBetaCodeError("");
-    window.location.href = `https://www.fablino.eu/welcome?code=${encodeURIComponent(betaCode.trim())}`;
+    window.location.href = `https://app.fablino.eu/welcome?lang=${lang}&code=${encodeURIComponent(betaCode.trim())}`;
   };
 
   return (
